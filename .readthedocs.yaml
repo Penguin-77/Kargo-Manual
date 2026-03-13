@@ -1,5 +1,6 @@
 version: 2
 
+# 这里的 build 后面是一个冒号，下方的 os, tools 等必须缩进 2 个空格
 build:
   os: ubuntu-22.04
   tools:
@@ -12,8 +13,19 @@ build:
     - texlive-latex-extra
     - latexmk
     - librsvg2-bin
-
-# 关键：不要在这里写 formats: - pdf，否则会触发 RTD 的默认逻辑导致冲突
+  
+  # 关键：jobs 必须在 build 缩进之内
+  jobs:
+    post_build:
+      # 1. 生成 HTML
+      - sphinx-build -b html source $READTHEDOCS_OUTPUT/html
+      # 2. 生成 LaTeX 中间文件
+      - sphinx-build -b latex source _build/latex
+      # 3. 编译 PDF (确保 KargoManual.tex 大小写与 conf.py 一致)
+      - cd _build/latex && latexmk -pdf -xelatex -interaction=nonstopmode -jobname=KargoManual KargoManual.tex
+      # 4. 复制 PDF 到输出目录
+      - mkdir -p $READTHEDOCS_OUTPUT/pdf
+      - cp _build/latex/KargoManual.pdf $READTHEDOCS_OUTPUT/pdf/
 
 python:
   install:
@@ -21,16 +33,3 @@ python:
 
 sphinx:
   configuration: source/conf.py
-
-build:
-  jobs:
-    post_build:
-      # 生成 HTML
-      - sphinx-build -b html source $READTHEDOCS_OUTPUT/html
-      # 生成 LaTeX 源码
-      - sphinx-build -b latex source _build/latex
-      # 编译 PDF：直接指定 .tex 文件名，不要让它自己去找
-      - cd _build/latex && latexmk -pdf -xelatex -interaction=nonstopmode -jobname=KargoManual KargoManual.tex
-      # 移动到输出目录
-      - mkdir -p $READTHEDOCS_OUTPUT/pdf
-      - cp _build/latex/KargoManual.pdf $READTHEDOCS_OUTPUT/pdf/
