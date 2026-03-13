@@ -17,14 +17,8 @@ build:
     post_build:
       - sphinx-build -b html source $READTHEDOCS_OUTPUT/html
       - sphinx-build -b latex source _build/latex
-      
-      # 额外检查：如果 cover.tex 在 source 目录下，拷贝到编译目录
-      - cp source/*.tex _build/latex/ || true
-      
-      # 编译 PDF
       - cd _build/latex && xelatex -interaction=nonstopmode KargoManual.tex
-      - cd _build/latex && xelatex -interaction=nonstopmode KargoManual.tex
-      
+      - cd _build/latex && xelatex -interaction=nonstopmode KargoManual.tex # 必须有第二次
       - mkdir -p $READTHEDOCS_OUTPUT/pdf
       - cp _build/latex/KargoManual.pdf $READTHEDOCS_OUTPUT/pdf/
 
