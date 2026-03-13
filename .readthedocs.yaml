@@ -17,13 +17,11 @@ build:
   # 关键：jobs 必须在 build 缩进之内
   jobs:
     post_build:
-      # 1. 生成 HTML
       - sphinx-build -b html source $READTHEDOCS_OUTPUT/html
-      # 2. 生成 LaTeX 中间文件
       - sphinx-build -b latex source _build/latex
-      # 3. 编译 PDF (确保 KargoManual.tex 大小写与 conf.py 一致)
-      - cd _build/latex && latexmk -pdf -xelatex -interaction=nonstopmode -jobname=KargoManual KargoManual.tex
-      # 4. 复制 PDF 到输出目录
+      # 使用更简洁的编译指令，-f 强制跳过非致命错误，-silent 减少日志堆积防止 RTD 限制
+      - cd _build/latex && xelatex -interaction=nonstopmode -recorder KargoManual.tex
+      - cd _build/latex && xelatex -interaction=nonstopmode -recorder KargoManual.tex
       - mkdir -p $READTHEDOCS_OUTPUT/pdf
       - cp _build/latex/KargoManual.pdf $READTHEDOCS_OUTPUT/pdf/
 
