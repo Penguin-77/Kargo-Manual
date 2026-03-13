@@ -101,14 +101,20 @@ latex_elements = {
 \setCJKmainfont{Noto Sans CJK SC}
 \setCJKsansfont{Noto Sans CJK SC}
 \setCJKmonofont{Noto Sans Mono CJK SC}
+
+% 修复数学符号和希腊字母缺失（alpha, pi, leq 等）
+\usepackage{fontspec}
+\setmainfont{FreeSerif} % 或者 Noto Serif，确保包含希腊字母
+\setsansfont{FreeSans}
+\setmonofont{FreeMono}
 ''',
 
     'preamble': r'''
-% ===== 基础宏包 =====
 \usepackage[titles]{tocloft}
 \hypersetup{unicode=true}
-\usepackage{graphicx}
 \usepackage{xeCJKfntef}
+\usepackage{graphicx}
+\usepackage{float}
 
 % ===== 页面边距与页眉空间分配 =====
 \usepackage{geometry}
@@ -262,15 +268,6 @@ citecolor=blue
 \definecolor{tableborder}{RGB}{160,160,160}
 
 \arrayrulecolor{tableborder}
-
-% 表头样式
-\renewcommand{\sphinxstyletheadfamily}{
-\color{white}\bfseries
-}
-
-\newcommand{\sphinxstyletheadbackground}{
-\rowcolor{tableheader}
-}
 
 \appto\sphinxstyletheadfamily{\sphinxstyletheadbackground}
 
