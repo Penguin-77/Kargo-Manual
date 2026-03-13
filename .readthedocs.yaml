@@ -10,19 +10,18 @@ commands:
     # 安装 Python 依赖
     - pip install -r requirements.txt
 
-    # 生成 HTML（可选，如果需要在线文档）
+    # 生成 HTML（在线文档）
     - sphinx-build -b html source $READTHEDOCS_OUTPUT/html
 
     # 生成 LaTeX 源文件
     - sphinx-build -b latex source _build/latex
 
-    # 进入 LaTeX 目录，编译 PDF
-    - cd _build/latex
-    - latexmk -r latexmkrc -pdf -f -dvi- -ps- -jobname=kargo-manual -interaction=nonstopmode KargoManual.tex
+    # 编译 PDF（注意：&& 连接，确保在同一目录）
+    - cd _build/latex && latexmk -r latexmkrc -pdf -f -dvi- -ps- -jobname=kargo-manual -interaction=nonstopmode KargoManual.tex
 
-    # 将生成的 PDF 复制到 Read the Docs 输出目录
+    # 复制 PDF 到输出目录
     - mkdir -p $READTHEDOCS_OUTPUT/pdf
-    - cp kargo-manual.pdf $READTHEDOCS_OUTPUT/pdf/
+    - cp _build/latex/kargo-manual.pdf $READTHEDOCS_OUTPUT/pdf/
 
 python:
    install:
