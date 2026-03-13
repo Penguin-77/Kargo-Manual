@@ -19,10 +19,12 @@ build:
     post_build:
       - sphinx-build -b html source $READTHEDOCS_OUTPUT/html
       - sphinx-build -b latex source _build/latex
-      # 使用更简洁的编译指令，-f 强制跳过非致命错误，-silent 减少日志堆积防止 RTD 限制
-      - cd _build/latex && xelatex -interaction=nonstopmode -recorder KargoManual.tex
-      - cd _build/latex && xelatex -interaction=nonstopmode -recorder KargoManual.tex
+      # 直接编译 Sphinx 默认生成的 tex 文件名
+      # 假设你的工程名生成的 tex 是 KargoManual.tex
+      - cd _build/latex && xelatex -interaction=nonstopmode KargoManual.tex
+      - cd _build/latex && xelatex -interaction=nonstopmode KargoManual.tex
       - mkdir -p $READTHEDOCS_OUTPUT/pdf
+      # 注意这里的 cp 源文件名要和生成的保持一致
       - cp _build/latex/KargoManual.pdf $READTHEDOCS_OUTPUT/pdf/
 
 python:

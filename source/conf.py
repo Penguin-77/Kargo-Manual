@@ -95,7 +95,23 @@ latex_elements = {
 
     'extraclassoptions': 'openany,oneside',
 
+    'fontpkg': r'''
+\usepackage{xeCJK}
+% 使用最简单的字体加载方式，避免触发复杂的 OpenType 特性解析
+\setCJKmainfont{Noto Sans CJK SC}
+\setCJKsansfont{Noto Sans CJK SC}
+\setCJKmonofont{Noto Sans Mono CJK SC}
+
+% 强制处理可能导致 'OT' 报错的编码问题
+\usepackage[T1]{fontenc}
+''',
+
     'preamble': r'''
+
+\usepackage[titles]{tocloft}
+\hypersetup{unicode=true}
+% 额外增加一层容错，防止 graphics 宏包在读取图片时报错
+\usepackage{graphicx}    
 
 % ===== 中文支持 =====
 \usepackage{xeCJK}
@@ -297,6 +313,9 @@ verbatimwithframe=false
 }
 
 ''',
+
+    'extraclassoptions': 'openany,oneside',
+
 }
 
 latex_additional_files = [
