@@ -15,6 +15,9 @@ python:
   install:
     - requirements: requirements.txt
 
+sphinx:
+  configuration: source/conf.py
+
 # 使用 RTD 默认的构建流程通常更稳定，除非你有极特殊的定制需求
 # 如果一定要用自定义 commands，请参考下方优化后的写法
 jobs:
