@@ -6,6 +6,9 @@ build:
   tools:
     python: "3.10"
 
+sphinx:
+  configuration: source/conf.py
+
 commands:
     # 安装 Python 依赖
     - pip install -r requirements.txt
