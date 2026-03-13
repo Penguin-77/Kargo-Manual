@@ -13,6 +13,8 @@ build:
     - latexmk
     - librsvg2-bin
 
+# 关键：不要在这里写 formats: - pdf，否则会触发 RTD 的默认逻辑导致冲突
+
 python:
   install:
     - requirements: requirements.txt
@@ -20,5 +22,15 @@ python:
 sphinx:
   configuration: source/conf.py
 
-formats:
-  - pdf
+build:
+  jobs:
+    post_build:
+      # 生成 HTML
+      - sphinx-build -b html source $READTHEDOCS_OUTPUT/html
+      # 生成 LaTeX 源码
+      - sphinx-build -b latex source _build/latex
+      # 编译 PDF：直接指定 .tex 文件名，不要让它自己去找
+      - cd _build/latex && latexmk -pdf -xelatex -interaction=nonstopmode -jobname=KargoManual KargoManual.tex
+      # 移动到输出目录
+      - mkdir -p $READTHEDOCS_OUTPUT/pdf
+      - cp _build/latex/KargoManual.pdf $READTHEDOCS_OUTPUT/pdf/
