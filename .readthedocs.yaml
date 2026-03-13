@@ -1,5 +1,6 @@
 version: 2
 
+# 这里的 build 后面是一个冒号，下方的 os, tools 等必须缩进 2 个空格
 build:
   os: ubuntu-22.04
   tools:
@@ -11,16 +12,7 @@ build:
     - texlive-xetex
     - texlive-latex-extra
     - latexmk
-    - librsvg2-bin
-
-  jobs:
-    post_build:
-      - sphinx-build -b html source $READTHEDOCS_OUTPUT/html
-      - sphinx-build -b latex source _build/latex
-      - cd _build/latex && xelatex -interaction=nonstopmode KargoManual.tex
-      - cd _build/latex && xelatex -interaction=nonstopmode KargoManual.tex # 必须有第二次
-      - mkdir -p $READTHEDOCS_OUTPUT/pdf
-      - cp _build/latex/KargoManual.pdf $READTHEDOCS_OUTPUT/pdf/
+    - librsvg2-bin 
 
 python:
   install:
@@ -28,6 +20,3 @@ python:
 
 sphinx:
   configuration: source/conf.py
-
-formats:
-  - pdf
