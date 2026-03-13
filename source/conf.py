@@ -95,6 +95,14 @@ latex_elements = {
 
     'extraclassoptions': 'openany,oneside',
 
+    # 这一步最关键：设置支持中文的字体
+    'fontpkg': r'''
+\usepackage{xeCJK}
+\setCJKmainfont{Noto Sans CJK SC}
+\setCJKsansfont{Noto Sans CJK SC}
+\setCJKmonofont{Noto Sans Mono CJK SC}
+''',
+
     'preamble': r'''
 
 % ===== 中文支持 =====
