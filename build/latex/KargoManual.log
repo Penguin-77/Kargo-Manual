@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.12.1)  12 MAR 2026 19:26
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.12.1)  13 MAR 2026 11:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1411,7 +1411,7 @@ Chapter 5.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.579 \sphinxstyletheadfamily
+l.611 \sphinxstyletheadfamily
                               \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1419,7 +1419,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.584 \sphinxstyletheadfamily
+l.616 \sphinxstyletheadfamily
                               \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1427,7 +1427,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.667 \sphinxstyletheadfamily
+l.699 \sphinxstyletheadfamily
                               \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1435,7 +1435,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.672 \sphinxstyletheadfamily
+l.704 \sphinxstyletheadfamily
                               \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1454,7 +1454,7 @@ File: Logo.png Graphic file (type bmp)
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.760 \sphinxstyletheadfamily
+l.792 \sphinxstyletheadfamily
                               \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1462,7 +1462,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.765 \sphinxstyletheadfamily
+l.797 \sphinxstyletheadfamily
                               \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1477,7 +1477,7 @@ File: Logo.png Graphic file (type bmp)
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.828 \sphinxstyletheadfamily
+l.860 \sphinxstyletheadfamily
                               \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1485,7 +1485,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.833 \sphinxstyletheadfamily
+l.865 \sphinxstyletheadfamily
                               \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1502,7 +1502,7 @@ File: Logo.png Graphic file (type bmp)
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.913 \sphinxstyletheadfamily
+l.945 \sphinxstyletheadfamily
                               \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1510,7 +1510,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.918 \sphinxstyletheadfamily
+l.950 \sphinxstyletheadfamily
                               \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1552,7 +1552,7 @@ File: Logo.png Graphic file (type bmp)
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.1336 \sphinxstyletheadfamily
+l.1368 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1560,7 +1560,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.1341 \sphinxstyletheadfamily
+l.1373 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1568,7 +1568,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.1346 \sphinxstyletheadfamily
+l.1378 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1631,7 +1631,7 @@ Chapter 8.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.1668 \sphinxstyletheadfamily
+l.1700 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1639,7 +1639,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.1673 \sphinxstyletheadfamily
+l.1705 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1647,13 +1647,13 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.1678 \sphinxstyletheadfamily
+l.1710 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 
-Underfull \hbox (badness 5050) in paragraph at lines 1849--1851
+Underfull \hbox (badness 5050) in paragraph at lines 1881--1883
 []\TU/SimSun(0)/m/n/10.95 启 用 底 盘 工 艺 包：|  点 击 \TU/SimSun(0)/b/n/10.95 应 用 \TU/
 FreeSerif(0)/m/n/10.95 > \TU/SimSun(0)/b/n/10.95 工 艺 包 \TU/FreeSerif(0)/m/n/10.
 95 >, \TU/SimSun(0)/m/n/10.95 找 到
@@ -1670,7 +1670,7 @@ Chapter 9.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.1917 \sphinxstyletheadfamily
+l.1949 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1678,7 +1678,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.1922 \sphinxstyletheadfamily
+l.1954 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1686,7 +1686,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.1927 \sphinxstyletheadfamily
+l.1959 \sphinxstyletheadfamily
                                \sphinxbeforeendvarwidth
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1720,7 +1720,7 @@ Package fontspec Info:
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.1938 \sphinxstyletheadfamily
+l.1970 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1728,7 +1728,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.1943 \sphinxstyletheadfamily
+l.1975 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1736,18 +1736,18 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.1948 \sphinxstyletheadfamily
+l.1980 \sphinxstyletheadfamily
                                \sphinxbeforeendvarwidth
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2902--2904
+Underfull \hbox (badness 10000) in paragraph at lines 2934--2936
 []\TU/FreeSerif(0)/m/n/10.95 Intel® Core™ i3/i5/i7-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2982--2984
+Underfull \hbox (badness 10000) in paragraph at lines 3014--3016
 []\TU/FreeSerif(0)/m/n/10.95 COM*2\TU/SimSun(0)/m/n/10.95 ，|  可 配 置 为
  []
 
@@ -1762,7 +1762,7 @@ File: Logo.png Graphic file (type bmp)
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.3094 \sphinxstyletheadfamily
+l.3126 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1770,7 +1770,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.3099 \sphinxstyletheadfamily
+l.3131 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1783,7 +1783,7 @@ File: Logo.png Graphic file (type bmp)
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.3255 \sphinxstyletheadfamily
+l.3287 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1791,7 +1791,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.3260 \sphinxstyletheadfamily
+l.3292 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1799,7 +1799,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.3265 \sphinxstyletheadfamily
+l.3297 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1807,55 +1807,55 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.3270 \sphinxstyletheadfamily
+l.3302 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3282--3284
+Underfull \hbox (badness 10000) in paragraph at lines 3314--3316
 []\TU/FreeSerif(0)/m/n/10.95 15EDGKNHB-3.5-12P-14-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3287--3289
+Underfull \hbox (badness 10000) in paragraph at lines 3319--3321
 []\TU/FreeSerif(0)/m/n/10.95 0.2~1.5mm²
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3287--3289
+Underfull \hbox (badness 10000) in paragraph at lines 3319--3321
 \TU/FreeSerif(0)/m/n/10.95 (0.00031~0.00233in²)
  []
 
 
-Underfull \hbox (badness 10000) detected at line 3290
+Underfull \hbox (badness 10000) detected at line 3322
 []\TU/FreeSerif(0)/m/n/10.95 0.2~1.5mm²
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3303--3305
+Underfull \hbox (badness 10000) in paragraph at lines 3335--3337
 []\TU/FreeSerif(0)/m/n/10.95 15EDGKNHM-3.5-16P-14-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3308--3310
+Underfull \hbox (badness 10000) in paragraph at lines 3340--3342
 []\TU/FreeSerif(0)/m/n/10.95 0.2~1.5mm²
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3308--3310
+Underfull \hbox (badness 10000) in paragraph at lines 3340--3342
 \TU/FreeSerif(0)/m/n/10.95 (0.00031~0.00233in²)
  []
 
 
-Underfull \hbox (badness 10000) detected at line 3311
+Underfull \hbox (badness 10000) detected at line 3343
 []\TU/FreeSerif(0)/m/n/10.95 0.2~1.5mm²
  []
 
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.3337 \sphinxstyletheadfamily
+l.3369 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1863,7 +1863,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.3342 \sphinxstyletheadfamily
+l.3374 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1871,7 +1871,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.3347 \sphinxstyletheadfamily
+l.3379 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1879,28 +1879,28 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.3352 \sphinxstyletheadfamily
+l.3384 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3364--3366
+Underfull \hbox (badness 10000) in paragraph at lines 3396--3398
 []\TU/FreeSerif(0)/m/n/10.95 2EDGKM-7.62-04P-14-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3369--3375
+Underfull \hbox (badness 10000) in paragraph at lines 3401--3407
 []\TU/FreeSerif(0)/m/n/10.95 1.5~2.5mm²
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3369--3375
+Underfull \hbox (badness 10000) in paragraph at lines 3401--3407
 \TU/FreeSerif(0)/m/n/10.95 (0.0023~0.004in²) \TU/SimSun(0)/m/n/10.95 或
  []
 
 
-Underfull \hbox (badness 10000) detected at line 3376
+Underfull \hbox (badness 10000) detected at line 3408
 []\TU/FreeSerif(0)/m/n/10.95 1.5~2.5mm²
  []
 
@@ -1912,7 +1912,7 @@ File: Logo.png Graphic file (type bmp)
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.3426 \sphinxstyletheadfamily
+l.3458 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1920,7 +1920,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.3431 \sphinxstyletheadfamily
+l.3463 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1944,7 +1944,7 @@ File: Logo.png Graphic file (type bmp)
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.3509 \sphinxstyletheadfamily
+l.3541 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1952,7 +1952,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.3514 \sphinxstyletheadfamily
+l.3546 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1967,7 +1967,7 @@ File: Logo.png Graphic file (type bmp)
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.3637 \sphinxstyletheadfamily
+l.3669 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1975,7 +1975,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.3642 \sphinxstyletheadfamily
+l.3674 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1990,7 +1990,7 @@ File: Logo.png Graphic file (type bmp)
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.3726 \sphinxstyletheadfamily
+l.3758 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -1998,7 +1998,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.3731 \sphinxstyletheadfamily
+l.3763 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2006,7 +2006,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.3736 \sphinxstyletheadfamily
+l.3768 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2026,7 +2026,7 @@ File: Logo.png Graphic file (type bmp)
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.3879 \sphinxstyletheadfamily
+l.3911 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2034,7 +2034,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.3884 \sphinxstyletheadfamily
+l.3916 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2090,7 +2090,7 @@ File: Logo.png Graphic file (type bmp)
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.4316 \sphinxstyletheadfamily
+l.4348 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2098,7 +2098,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.4321 \sphinxstyletheadfamily
+l.4353 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2106,7 +2106,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.4326 \sphinxstyletheadfamily
+l.4358 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2114,7 +2114,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.4331 \sphinxstyletheadfamily
+l.4363 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2122,7 +2122,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.4336 \sphinxstyletheadfamily
+l.4368 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2130,7 +2130,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.4341 \sphinxstyletheadfamily
+l.4373 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2138,7 +2138,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.4346 \sphinxstyletheadfamily
+l.4378 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2291,7 +2291,7 @@ File: 工具IO线束.pdf Graphic file (type pdf)
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.5200 \sphinxstyletheadfamily
+l.5230 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2299,7 +2299,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.5205 \sphinxstyletheadfamily
+l.5235 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2307,25 +2307,25 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.5210 \sphinxstyletheadfamily
+l.5240 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 
-Overfull \hbox (5.07149pt too wide) in paragraph at lines 5210--5212
+Overfull \hbox (5.07149pt too wide) in paragraph at lines 5240--5242
 []\TU/FreeSerif(0)/b/n/10.95 I/O 
  []
 
 
-Overfull \hbox (5.07149pt too wide) detected at line 5213
+Overfull \hbox (5.07149pt too wide) detected at line 5243
 []\TU/FreeSerif(0)/b/n/10.95 I/O 
  []
 
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.5215 \sphinxstyletheadfamily
+l.5245 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2333,7 +2333,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.5220 \sphinxstyletheadfamily
+l.5250 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2410,7 +2410,7 @@ File: 控制柜电源接口.pdf Graphic file (type pdf)
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.5876 \sphinxstyletheadfamily
+l.5906 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2418,7 +2418,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.5881 \sphinxstyletheadfamily
+l.5911 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2426,7 +2426,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.5886 \sphinxstyletheadfamily
+l.5916 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2434,7 +2434,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.5891 \sphinxstyletheadfamily
+l.5921 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2465,7 +2465,7 @@ File: CN1集成接口.pdf Graphic file (type pdf)
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.6099 \sphinxstyletheadfamily
+l.6129 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2473,7 +2473,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.6104 \sphinxstyletheadfamily
+l.6134 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2481,7 +2481,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.6109 \sphinxstyletheadfamily
+l.6139 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2489,7 +2489,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.6114 \sphinxstyletheadfamily
+l.6144 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2543,7 +2543,7 @@ File: CN2接口.pdf Graphic file (type pdf)
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.6536 \sphinxstyletheadfamily
+l.6566 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2551,7 +2551,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.6541 \sphinxstyletheadfamily
+l.6571 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2559,7 +2559,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.6546 \sphinxstyletheadfamily
+l.6576 \sphinxstyletheadfamily
                                \sphinxbeforeendvarwidth
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2567,64 +2567,8 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.6549 \sphinxstyletheadfamily
+l.6579 \sphinxstyletheadfamily
                                \sphinxbeforeendvarwidth
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \noalign.
-\rowcolor ->\noalign 
-                     {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.6552 \sphinxstyletheadfamily
-                               \sphinxAtStartPar
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \noalign.
-\rowcolor ->\noalign 
-                     {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.6557 \sphinxstyletheadfamily
-                               \sphinxbeforeendvarwidth
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \noalign.
-\rowcolor ->\noalign 
-                     {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.6560 \sphinxstyletheadfamily
-                               \sphinxbeforeendvarwidth
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \noalign.
-\rowcolor ->\noalign 
-                     {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.6563 \sphinxstyletheadfamily
-                               \sphinxAtStartPar
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \noalign.
-\rowcolor ->\noalign 
-                     {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.6569 \sphinxstyletheadfamily
-                               \sphinxbeforeendvarwidth
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \noalign.
-\rowcolor ->\noalign 
-                     {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.6572 \sphinxstyletheadfamily
-                               \sphinxAtStartPar
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \noalign.
-\rowcolor ->\noalign 
-                     {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.6577 \sphinxstyletheadfamily
-                               \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
@@ -2640,6 +2584,22 @@ an alignment. Proceed, and I'll ignore this case.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
 l.6587 \sphinxstyletheadfamily
+                               \sphinxbeforeendvarwidth
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced \noalign.
+\rowcolor ->\noalign 
+                     {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
+l.6590 \sphinxstyletheadfamily
+                               \sphinxbeforeendvarwidth
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced \noalign.
+\rowcolor ->\noalign 
+                     {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
+l.6593 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2647,16 +2607,8 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.6592 \sphinxstyletheadfamily
-                               \sphinxAtStartPar
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Misplaced \noalign.
-\rowcolor ->\noalign 
-                     {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.6597 \sphinxstyletheadfamily
-                               \sphinxAtStartPar
+l.6599 \sphinxstyletheadfamily
+                               \sphinxbeforeendvarwidth
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
@@ -2664,77 +2616,125 @@ an alignment. Proceed, and I'll ignore this case.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
 l.6602 \sphinxstyletheadfamily
+                               \sphinxAtStartPar
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced \noalign.
+\rowcolor ->\noalign 
+                     {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
+l.6607 \sphinxstyletheadfamily
+                               \sphinxAtStartPar
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced \noalign.
+\rowcolor ->\noalign 
+                     {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
+l.6612 \sphinxstyletheadfamily
+                               \sphinxAtStartPar
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced \noalign.
+\rowcolor ->\noalign 
+                     {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
+l.6617 \sphinxstyletheadfamily
+                               \sphinxAtStartPar
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced \noalign.
+\rowcolor ->\noalign 
+                     {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
+l.6622 \sphinxstyletheadfamily
+                               \sphinxAtStartPar
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced \noalign.
+\rowcolor ->\noalign 
+                     {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
+l.6627 \sphinxstyletheadfamily
+                               \sphinxAtStartPar
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced \noalign.
+\rowcolor ->\noalign 
+                     {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
+l.6632 \sphinxstyletheadfamily
                                \sphinxbeforeendvarwidth
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6634--6636
+Underfull \hbox (badness 10000) in paragraph at lines 6664--6666
 []\TU/FreeSerif(0)/m/n/10.95 COM1: RS485_D- /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6667--6669
+Underfull \hbox (badness 10000) in paragraph at lines 6697--6699
 []\TU/FreeSerif(0)/m/n/10.95 COM2: RS485_D- /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6700--6702
+Underfull \hbox (badness 10000) in paragraph at lines 6730--6732
 []\TU/FreeSerif(0)/m/n/10.95 COM1: RS485_D+ /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6733--6735
+Underfull \hbox (badness 10000) in paragraph at lines 6763--6765
 []\TU/FreeSerif(0)/m/n/10.95 COM2: RS485_D+ /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6766--6768
+Underfull \hbox (badness 10000) in paragraph at lines 6796--6798
 []\TU/FreeSerif(0)/m/n/10.95 COM1: RS232_TX /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6799--6801
+Underfull \hbox (badness 10000) in paragraph at lines 6829--6831
 []\TU/FreeSerif(0)/m/n/10.95 COM2: RS232_TX /
  []
 
 
-Overfull \hbox (10.88878pt too wide) in paragraph at lines 6867--6869
+Overfull \hbox (10.88878pt too wide) in paragraph at lines 6897--6899
 []\TU/FreeSerif(0)/m/n/10.95 9&10&13 
  []
 
 
-Overfull \hbox (10.88878pt too wide) detected at line 6870
+Overfull \hbox (10.88878pt too wide) detected at line 6900
 []\TU/FreeSerif(0)/m/n/10.95 9&10&13 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6934--6936
+Underfull \hbox (badness 10000) in paragraph at lines 6964--6966
 []\TU/FreeSerif(0)/m/n/10.95 Re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6934--6936
+Underfull \hbox (badness 10000) in paragraph at lines 6964--6966
 \TU/FreeSerif(0)/m/n/10.95 mote
  []
 
 
-Overfull \hbox (5.86273pt too wide) in paragraph at lines 6934--6936
+Overfull \hbox (5.86273pt too wide) in paragraph at lines 6964--6966
 \TU/FreeSerif(0)/m/n/10.95 ON/OFF 
  []
 
 
-Overfull \hbox (5.86273pt too wide) detected at line 6937
+Overfull \hbox (5.86273pt too wide) detected at line 6967
 \TU/FreeSerif(0)/m/n/10.95 ON/OFF 
  []
 
 
-Underfull \hbox (badness 10000) detected at line 6937
+Underfull \hbox (badness 10000) detected at line 6967
 \TU/FreeSerif(0)/m/n/10.95 mote
  []
 
 
-Underfull \hbox (badness 10000) detected at line 6937
+Underfull \hbox (badness 10000) detected at line 6967
 []\TU/FreeSerif(0)/m/n/10.95 Re-
  []
 
@@ -2811,7 +2811,7 @@ File: Logo.png Graphic file (type bmp)
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.7452 \sphinxstyletheadfamily
+l.7480 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2819,7 +2819,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.7457 \sphinxstyletheadfamily
+l.7485 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2827,7 +2827,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.7462 \sphinxstyletheadfamily
+l.7490 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2835,7 +2835,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.7467 \sphinxstyletheadfamily
+l.7495 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2843,7 +2843,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.7472 \sphinxstyletheadfamily
+l.7500 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2851,7 +2851,7 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.7477 \sphinxstyletheadfamily
+l.7505 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
@@ -2859,13 +2859,13 @@ an alignment. Proceed, and I'll ignore this case.
 ! Misplaced \noalign.
 \rowcolor ->\noalign 
                      {\ifnum 0=`}\fi \global \let \CT@do@color \CT@@do@color...
-l.7482 \sphinxstyletheadfamily
+l.7510 \sphinxstyletheadfamily
                                \sphinxAtStartPar
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7633--7635
+Underfull \hbox (badness 10000) in paragraph at lines 7661--7663
 []\TU/SimSun(0)/m/n/10.95 线 缆 和 线
  []
 
@@ -2931,10 +2931,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 26917 strings out of 475796
- 558539 string characters out of 5774033
- 1012233 words of memory out of 5000000
- 49231 multiletter control sequences out of 15000+600000
+ 26915 strings out of 475796
+ 559218 string characters out of 5774033
+ 1012148 words of memory out of 5000000
+ 49229 multiletter control sequences out of 15000+600000
  568245 words of font info for 137 fonts, out of 8000000 for 9000
  37 hyphenation exceptions out of 8191
  74i,21n,111p,1200b,753s stack positions out of 10000i,1000n,20000p,200000b,200000s

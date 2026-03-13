@@ -30,7 +30,7 @@
 
 .. note::
 
-    以上文档可从 `JAKA官网 <www.jaka.com>`_ 获得。
+    以上文档可从JAKA官网 `<www.jaka.com>`_ 获得。
 
 
 人员要求
