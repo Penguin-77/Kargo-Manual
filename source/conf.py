@@ -95,27 +95,20 @@ latex_elements = {
 
     'extraclassoptions': 'openany,oneside',
 
+    # 1. 字体设置：这是解决 "Missing character" 的关键
     'fontpkg': r'''
 \usepackage{xeCJK}
-% 使用最简单的字体加载方式，避免触发复杂的 OpenType 特性解析
 \setCJKmainfont{Noto Sans CJK SC}
 \setCJKsansfont{Noto Sans CJK SC}
 \setCJKmonofont{Noto Sans Mono CJK SC}
-
-% 强制处理可能导致 'OT' 报错的编码问题
-\usepackage[T1]{fontenc}
 ''',
 
     'preamble': r'''
-
+% ===== 基础宏包 =====
 \usepackage[titles]{tocloft}
 \hypersetup{unicode=true}
-% 额外增加一层容错，防止 graphics 宏包在读取图片时报错
-\usepackage{graphicx}    
-
-% ===== 中文支持 =====
-\usepackage{xeCJK}
-\usepackage[fontset=windows]{ctex}
+\usepackage{graphicx}
+\usepackage{xeCJKfntef}
 
 % ===== 页面边距与页眉空间分配 =====
 \usepackage{geometry}
@@ -314,7 +307,6 @@ verbatimwithframe=false
 
 ''',
 
-    'extraclassoptions': 'openany,oneside',
 
 }
 

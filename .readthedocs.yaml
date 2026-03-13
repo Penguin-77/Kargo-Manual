@@ -1,6 +1,5 @@
 version: 2
 
-# 这里的 build 后面是一个冒号，下方的 os, tools 等必须缩进 2 个空格
 build:
   os: ubuntu-22.04
   tools:
@@ -13,18 +12,20 @@ build:
     - texlive-latex-extra
     - latexmk
     - librsvg2-bin
-  
-  # 关键：jobs 必须在 build 缩进之内
+
   jobs:
     post_build:
       - sphinx-build -b html source $READTHEDOCS_OUTPUT/html
       - sphinx-build -b latex source _build/latex
-      # 直接编译 Sphinx 默认生成的 tex 文件名
-      # 假设你的工程名生成的 tex 是 KargoManual.tex
+      
+      # 额外检查：如果 cover.tex 在 source 目录下，拷贝到编译目录
+      - cp source/*.tex _build/latex/ || true
+      
+      # 编译 PDF
       - cd _build/latex && xelatex -interaction=nonstopmode KargoManual.tex
       - cd _build/latex && xelatex -interaction=nonstopmode KargoManual.tex
+      
       - mkdir -p $READTHEDOCS_OUTPUT/pdf
-      # 注意这里的 cp 源文件名要和生成的保持一致
       - cp _build/latex/KargoManual.pdf $READTHEDOCS_OUTPUT/pdf/
 
 python:
