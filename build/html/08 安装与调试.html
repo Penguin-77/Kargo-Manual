@@ -1,0 +1,328 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>安装与调试 &mdash; Kargo硬件用户手册 V01-α 文档</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=528ab621"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="_static/translations.js?v=540d3cec"></script>
+      <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="1. 电源电气接口" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html" />
+    <link rel="prev" title="9. 技术规格" href="07%20%E6%8A%80%E6%9C%AF%E8%A7%84%E6%A0%BC.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Kargo硬件用户手册
+              <img src="_static/Logo1.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">目录</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="02%20%E5%89%8D%E8%A8%80.html">1. 前言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03%20%E4%BA%A7%E5%93%81%E6%B8%85%E5%8D%95.html">2. 产品清单</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03%20%E4%BA%A7%E5%93%81%E6%B8%85%E5%8D%95.html#id2">3. 重要安全说明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04%20%E6%89%8B%E5%86%8C%E6%A6%82%E8%BF%B0.html">4. 手册概述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05%20%E5%AE%89%E5%85%A8%E8%A7%84%E8%8C%83.html">5. 安全规范</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05-%E7%B4%A7%E6%80%A5%E9%A9%B1%E5%8A%A8.html">6. 紧急驱动</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06%20%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0.html">7. 系统概述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06-1%20%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8.html">8. 快速入门</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07%20%E6%8A%80%E6%9C%AF%E8%A7%84%E6%A0%BC.html">9. 技术规格</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">安装与调试</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id3">运输及保存</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id5">运输条件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">保存条件</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">拆包及搬运</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id11">末端执行器安装</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id13">安装前准备</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id15">机械臂法兰尺寸</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id17">安装步骤</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id19">电气连接</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html">1. 电源电气接口</a></li>
+<li class="toctree-l3"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#id3">2. 电池电气接口</a></li>
+<li class="toctree-l3"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#id5">3. 充电</a></li>
+<li class="toctree-l3"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#id7">4. 断电</a></li>
+<li class="toctree-l3"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#id9">5. 更换电池</a></li>
+<li class="toctree-l3"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#i-o">6. 工具I/O接口</a></li>
+<li class="toctree-l3"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#id24">7. 用户接口</a></li>
+<li class="toctree-l3"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#id26">8. 控制柜接口</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id21">首次启动</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="08-%E9%A6%96%E6%AC%A1%E5%90%AF%E5%8A%A8.html">1. 启动前准备</a></li>
+<li class="toctree-l3"><a class="reference internal" href="08-%E9%A6%96%E6%AC%A1%E5%90%AF%E5%8A%A8.html#id3">2. 启动机器人</a></li>
+<li class="toctree-l3"><a class="reference internal" href="08-%E9%A6%96%E6%AC%A1%E5%90%AF%E5%8A%A8.html#id5">3. 操作机器人</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="09%20%E7%BB%B4%E6%8A%A4.html">10. 维护</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10%20%E5%9B%9E%E6%94%B6%E5%A4%84%E7%90%86.html">11. 回收处理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="11%20%E8%B4%A8%E9%87%8F%E4%BF%9D%E9%9A%9C.html">12. 质量保证</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Kargo硬件用户手册</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">安装与调试</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/08 安装与调试.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<span id="id2"></span><h1>安装与调试<a class="headerlink" href="#id1" title="链接到此标题。"></a></h1>
+<p>在阅读本章前，请确保您已经详细阅读并充分理解 <a class="reference internal" href="05%20%E5%AE%89%E5%85%A8%E8%A7%84%E8%8C%83.html#id1"><span class="std std-ref">安全规范</span></a> 。</p>
+<p>本章将快速介绍JAKA机器人的基本组件与使用方法，作为对机器人的初步了解。详细的机械电气规格请参考其它章节。</p>
+<p>在使用过程中，如果您需要快速帮助，请拨打我们的快速咨询热线：400-006-2665。</p>
+<section id="id3">
+<span id="id4"></span><h2>运输及保存<a class="headerlink" href="#id3" title="链接到此标题。"></a></h2>
+<section id="id5">
+<span id="id6"></span><h3>运输条件<a class="headerlink" href="#id5" title="链接到此标题。"></a></h3>
+<p>机器人运输时需要使用原包装，因此如果有运输需求，请务必保存好原包装。</p>
+<p>机器人吊装时，应采取相应措施进行定位，避免产生意外运动造成损伤。</p>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<ul class="simple">
+<li><p>确保抬升设备时作业人员背部或身体其他部位不会过分负重。使用适当的抬升设备。JAKA不对设备运输过程中产生的损害负责。</p></li>
+<li><p>请遵守各地区及国家有关搬运法规。</p></li>
+<li><p>确保安装机器人时严格遵守安装指示。</p></li>
+</ul>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">注意</p>
+<p>如果运输机器人时未使用其原始包装，所有保修都将失效。</p>
+</div>
+</section>
+<section id="id7">
+<span id="id8"></span><h3>保存条件<a class="headerlink" href="#id7" title="链接到此标题。"></a></h3>
+<p>1.      保存温度：-10~50℃：
+长期保存时，为了维持其可靠性，建议将温度维持在25±10℃内。请避免急剧的温度变化（10℃/h以上）。</p>
+<p>2.      保存湿度：20~85%RH
+长期保存时，为了维持其可靠性，建议将湿度维持在45~65%内。保存时避免结露或发霉。</p>
+<p>3.      防静电
+保存在极端干燥的状况下容易产生静电，静电放电时的冲击可能破坏半导体。请放入防静电袋中保存。</p>
+<p>4.      其他环境条件
+请保存在不会产生有毒气体、污垢、尘埃较少的环境中。保存期间请勿在其上面放置重物。</p>
+</section>
+</section>
+<section id="id9">
+<span id="id10"></span><h2>拆包及搬运<a class="headerlink" href="#id9" title="链接到此标题。"></a></h2>
+<p>Kargo机器人采用纸箱加托盘的包装形式。操作步骤如下：</p>
+<ol class="arabic simple">
+<li><p>拆开并取下外层纸箱。</p></li>
+<li><p>将放置于泡棉内的斜坡木板取出，并将其放置于托盘前并将二者对齐。</p></li>
+<li><p>取出电源线、手柄等配件。</p></li>
+<li><p>取下固定泡棉。</p></li>
+<li><p>打开移动底盘的电池仓门，拨动电源开关，并按下位于升降机构背面的电源按钮，此时指示灯青色呼吸，表示机器人已上电。</p></li>
+<li><p>长按位于升降机构背面的释放抱闸按钮3秒，待指示灯变为蓝色后，表示抱闸已释放。</p></li>
+<li><p>至少由两人推动机器人，直至离开托盘和斜坡。</p></li>
+</ol>
+<div class="admonition attention">
+<p class="admonition-title">注意</p>
+<p>在推动机器人前，务必确保托盘及斜坡木板已可靠固定，以防止机器人倾覆。</p>
+</div>
+</section>
+<section id="id11">
+<span id="id12"></span><h2>末端执行器安装<a class="headerlink" href="#id11" title="链接到此标题。"></a></h2>
+<section id="id13">
+<span id="id14"></span><h3>安装前准备<a class="headerlink" href="#id13" title="链接到此标题。"></a></h3>
+<p>为避免机器人运行异常，请遵循以下要求：</p>
+<ul class="simple">
+<li><p>在操作机器人之前，验证负载是否符合机器人所规定的负载范围。</p></li>
+<li><p>根据机器人的最大负载能力，限制最大负载。</p></li>
+</ul>
+</section>
+<section id="id15">
+<span id="id16"></span><h3>机械臂法兰尺寸<a class="headerlink" href="#id15" title="链接到此标题。"></a></h3>
+<figure class="align-center" id="id23">
+<a class="reference internal image-reference" href="_images/末端法兰尺寸.svg"><img alt="_images/%E6%9C%AB%E7%AB%AF%E6%B3%95%E5%85%B0%E5%B0%BA%E5%AF%B8.svg" src="_images/%E6%9C%AB%E7%AB%AF%E6%B3%95%E5%85%B0%E5%B0%BA%E5%AF%B8.svg" style="width: 15cm;" />
+</a>
+<figcaption>
+<p><span class="caption-number">图 1 </span><span class="caption-text">末端法兰尺寸</span><a class="headerlink" href="#id23" title="链接到此图片"></a></p>
+</figcaption>
+</figure>
+<div style="clear: both;"></div></section>
+<section id="id17">
+<span id="id18"></span><h3>安装步骤<a class="headerlink" href="#id17" title="链接到此标题。"></a></h3>
+<p>末端执行器安装步骤如下：</p>
+<ol class="arabic simple">
+<li><p>将末端执行器固定到机械臂工具法兰安装孔位上 ( <strong>1</strong> )</p></li>
+</ol>
+<blockquote>
+<div><ul>
+<li><p>节圆直径符合DIN ISO 9409-1标准，为50 mm（1.97 in）：4个M6 螺纹孔（ <strong>2</strong> ），拧紧扭矩：15.3 Nm（135.42 Ibf·in），螺钉性能等级不低于12.9。</p></li>
+<li><p>节圆直径为50 mm（1.97 in）：1 个安装孔直径为6 mm（0.24 in），公差等级 H7 ( <strong>3</strong> )</p>
+<figure class="align-center" id="id24">
+<a class="reference internal image-reference" href="_images/末端法兰.svg"><img alt="_images/%E6%9C%AB%E7%AB%AF%E6%B3%95%E5%85%B0.svg" src="_images/%E6%9C%AB%E7%AB%AF%E6%B3%95%E5%85%B0.svg" style="width: 5cm;" />
+</a>
+<figcaption>
+<p><span class="caption-number">图 2 </span><span class="caption-text">末端法兰</span><a class="headerlink" href="#id24" title="链接到此图片"></a></p>
+</figcaption>
+</figure>
+</li>
+</ul>
+</div></blockquote>
+<div style="clear: both;"></div><ol class="arabic simple" start="2">
+<li><p>机械臂末端法兰尺寸信息参考 <a class="reference internal" href="#id15"><span class="std std-ref">机械臂法兰尺寸</span></a> 。</p></li>
+<li><p>在Coboπ中设置负载，设置负载步骤参考Coboπ软件用户手册。</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<ul class="simple">
+<li><p>请严格遵守影响机器人负载能力的重量及距离限制。</p></li>
+<li><p>根据ISO9409-1：2004，定位销孔的中心应与机械接口坐标系(GB/T16977-2019)+Xm的轴线对齐，JAKA机器人末端执行器定位销孔的中心在此基础上顺时针偏移45°。</p></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="id19">
+<span id="id20"></span><h2>电气连接<a class="headerlink" href="#id19" title="链接到此标题。"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html">1. 电源电气接口</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#id3">2. 电池电气接口</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#id5">3. 充电</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#id7">4. 断电</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#id9">5. 更换电池</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#i-o">6. 工具I/O接口</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#id12">6.1. 连接工具端接口定义</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#id14">6.2. 工具端接线说明</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#id16">6.2.1. 数字输入</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#id18">6.2.1.1. 干接点输入</a></li>
+<li class="toctree-l4"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#npn-pnp">6.2.1.2. 连接NPN/PNP型设备</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#id19">6.2.2. 数字输出</a></li>
+<li class="toctree-l3"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#rs485">6.2.3. RS485</a></li>
+<li class="toctree-l3"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#id22">6.2.4. 模拟输入</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#id24">7. 用户接口</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#id26">8. 控制柜接口</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#id28">8.1. 电气警告和注意事项</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#id30">8.2. 接地与屏蔽连接</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#id32">8.3. 接地要求</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#id34">8.4. 接地位置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#id36">8.5. 前面板接口</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#id38">8.6. 电源连接</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#id40">8.7. 挂牌上锁</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#id41">8.8. 连接步骤</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#id44">8.9. 制动电阻连接</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#id46">8.10. 机械臂连接</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#cn1-i-o">8.11. CN1集成接口（I/O）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#id49">8.12. 数字I/O接口</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#id50">8.13. 数字输入</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#id51">8.14. 数字输出</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#id52">8.15. 远程开关机接口</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#id53">8.16. 紧急停止接口</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#id54">8.17. 背面板接口</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#cn2">8.18. CN2串口通信</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#rs232">8.19. RS232接口</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#id57">8.20. RS485接口</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#rs422">8.21. RS422接口</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html#id58">8.22. 远程开关机接口</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="id21">
+<span id="id22"></span><h2>首次启动<a class="headerlink" href="#id21" title="链接到此标题。"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="08-%E9%A6%96%E6%AC%A1%E5%90%AF%E5%8A%A8.html">1. 启动前准备</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08-%E9%A6%96%E6%AC%A1%E5%90%AF%E5%8A%A8.html#id3">2. 启动机器人</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08-%E9%A6%96%E6%AC%A1%E5%90%AF%E5%8A%A8.html#id5">3. 操作机器人</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="08-%E9%A6%96%E6%AC%A1%E5%90%AF%E5%8A%A8.html#id7">3.1. 手动模式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08-%E9%A6%96%E6%AC%A1%E5%90%AF%E5%8A%A8.html#id9">3.2. 自动模式</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="07%20%E6%8A%80%E6%9C%AF%E8%A7%84%E6%A0%BC.html" class="btn btn-neutral float-left" title="9. 技术规格" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="08-%E7%94%B5%E6%B0%94%E8%BF%9E%E6%8E%A5.html" class="btn btn-neutral float-right" title="1. 电源电气接口" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2026, JAKA。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

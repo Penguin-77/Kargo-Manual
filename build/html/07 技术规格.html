@@ -1,0 +1,1226 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>9. 技术规格 &mdash; Kargo硬件用户手册 V01-α 文档</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=528ab621"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="_static/translations.js?v=540d3cec"></script>
+      <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="安装与调试" href="08%20%E5%AE%89%E8%A3%85%E4%B8%8E%E8%B0%83%E8%AF%95.html" />
+    <link rel="prev" title="8. 快速入门" href="06-1%20%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Kargo硬件用户手册
+              <img src="_static/Logo1.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">目录</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="02%20%E5%89%8D%E8%A8%80.html">1. 前言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03%20%E4%BA%A7%E5%93%81%E6%B8%85%E5%8D%95.html">2. 产品清单</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03%20%E4%BA%A7%E5%93%81%E6%B8%85%E5%8D%95.html#id2">3. 重要安全说明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04%20%E6%89%8B%E5%86%8C%E6%A6%82%E8%BF%B0.html">4. 手册概述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05%20%E5%AE%89%E5%85%A8%E8%A7%84%E8%8C%83.html">5. 安全规范</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05-%E7%B4%A7%E6%80%A5%E9%A9%B1%E5%8A%A8.html">6. 紧急驱动</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06%20%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0.html">7. 系统概述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06-1%20%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8.html">8. 快速入门</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">9. 技术规格</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id3">9.1. 技术参数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">9.2. 电气规格</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id7">9.2.1. 充电器电气规格</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id9">9.2.2. 控制柜接口线束规格</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#eds">9.2.3. 受EDS影响</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id14">9.2.4. 剩余电流</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id16">9.3. 机械尺寸</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id18">9.4. 指示灯</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id20">9.4.1. 电池指示灯</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id22">9.5. 按钮</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id24">9.5.1. 整机按钮</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id26">9.5.2. 末端法兰按钮</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id28">9.5.3. 电池按钮</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id30">9.6. 力控传感器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id32">9.7. 障碍物检测</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#d">9.7.1. 3D深度相机</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id35">9.7.2. 激光雷达</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id37">9.7.3. 安全触边</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id39">9.8. 控制面板</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id41">9.9. 无线手柄</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id43">9.10. 机械臂标定刻线</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id45">9.11. 旋转方向</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id47">9.12. 机械臂奇异点</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id49">9.13. 底盘所需空间</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id51">9.14. 坐标系</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id53">9.14.1. 机械臂坐标系</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id55">9.14.2. 移动底盘坐标系</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="08%20%E5%AE%89%E8%A3%85%E4%B8%8E%E8%B0%83%E8%AF%95.html">安装与调试</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09%20%E7%BB%B4%E6%8A%A4.html">10. 维护</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10%20%E5%9B%9E%E6%94%B6%E5%A4%84%E7%90%86.html">11. 回收处理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="11%20%E8%B4%A8%E9%87%8F%E4%BF%9D%E9%9A%9C.html">12. 质量保证</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Kargo硬件用户手册</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">9. </span>技术规格</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/07 技术规格.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<span id="id2"></span><h1><span class="section-number">9. </span>技术规格<a class="headerlink" href="#id1" title="链接到此标题。"></a></h1>
+<section id="id3">
+<span id="id4"></span><h2><span class="section-number">9.1. </span>技术参数<a class="headerlink" href="#id3" title="链接到此标题。"></a></h2>
+<table class="docutils align-default" id="id57">
+<caption><span class="caption-number">表 9.1 </span><span class="caption-text">技术参数</span><a class="headerlink" href="#id57" title="链接到此表格。"></a></caption>
+<colgroup>
+<col style="width: 40.0%" />
+<col style="width: 30.0%" />
+<col style="width: 30.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>项目</p></th>
+<th class="head"><p>规格</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>基础参数</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>最大载荷</p></td>
+<td><p>50kg</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>重量</p></td>
+<td><p>250kg</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>材质</p></td>
+<td><p>6060-T6/Q235/ABS</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>底盘外形尺寸（长度*宽度*高度）</p></td>
+<td><p>841*641*313mm</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>升降柱外形尺寸（长度*宽度*高度）</p></td>
+<td><p>841*641*1750mm</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>底盘负载面尺寸</p></td>
+<td><p>350*250mm</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>头部俯仰范围</p></td>
+<td><p>–20~45°</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>颈部旋转范围</p></td>
+<td><p>±90°</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>身体俯仰范围</p></td>
+<td><p>0~90°</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>升降机构升降范围</p></td>
+<td><p>0~780mm</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>底盘离地间隙</p></td>
+<td><p>40mm</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>驱动类型</p></td>
+<td><p>双舵轮驱动</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>导航方式</p></td>
+<td><p>前后双激光SLAM导航</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>控制方式</p></td>
+<td><p>JAKA Coboπ</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>平均功率</p></td>
+<td><p>1600W</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>最大功率</p></td>
+<td><p>3200W</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>用户接口</p></td>
+<td><p>USB*3
+RJ45*2
+HDMI*1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>IP等级</p></td>
+<td><p>IP20</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>机械臂参数</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>单臂负载</p></td>
+<td><p>5kg</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>工作半径</p></td>
+<td><p>976mm</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>重复定位精度</p></td>
+<td><p>±0.05mm</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>自由度</p></td>
+<td><p>7</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>动作范围</p></td>
+<td><p>旋转范围</p></td>
+<td><p>最大速度</p></td>
+</tr>
+<tr class="row-odd"><td><p>关节1</p></td>
+<td><p>±360°</p></td>
+<td><p>90°/s</p></td>
+</tr>
+<tr class="row-even"><td><p>关节2</p></td>
+<td><p>±105°</p></td>
+<td><p>90°/s</p></td>
+</tr>
+<tr class="row-odd"><td><p>关节3</p></td>
+<td><p>±360°</p></td>
+<td><p>120°/s</p></td>
+</tr>
+<tr class="row-even"><td><p>关节4</p></td>
+<td><p>–30°~135°</p></td>
+<td><p>120°/s</p></td>
+</tr>
+<tr class="row-odd"><td><p>关节5</p></td>
+<td><p>±360°</p></td>
+<td><p>120°/s</p></td>
+</tr>
+<tr class="row-even"><td><p>关节6</p></td>
+<td><p>±105°</p></td>
+<td><p>120°/s</p></td>
+</tr>
+<tr class="row-odd"><td><p>关节7</p></td>
+<td><p>±360°</p></td>
+<td><p>120°/s</p></td>
+</tr>
+<tr class="row-even"><td><p>工具端典型速度</p></td>
+<td><p>1m/s</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>底座直径</p></td>
+<td><p>130mm</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>底盘运动性能</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>可越过最大间隙</p></td>
+<td><p>30mm</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>可越过最高台阶</p></td>
+<td><p>10mm</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>最大爬坡</p></td>
+<td><p>10°</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>最大速度</p></td>
+<td><p>1.5m/s</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>额定速度</p></td>
+<td><p>1m/s</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>最大加速度</p></td>
+<td><p>1m/s²</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>定位精度</p></td>
+<td><p>±10mm</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>旋转直径</p></td>
+<td><p>φ975mm</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>电池性能</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>电池类型</p></td>
+<td><p>磷酸铁锂</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>额定电压</p></td>
+<td><p>48V</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>最大充电电压</p></td>
+<td><p>54.75V</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>放电截止电压</p></td>
+<td><p>37.5V</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>最大电流</p></td>
+<td><p>45A</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>充电循环次数</p></td>
+<td><p>2000次，80%DOD</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>电池容量</p></td>
+<td><p>21Ah*2</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>额定工况工作时长</p></td>
+<td><p>4h</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>空载工作时长</p></td>
+<td><p>6h</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>完全放电后充电时长</p></td>
+<td><p>2h</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>电池重量（单个）</p></td>
+<td><p>9±2 kg</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>电池尺寸（长度*宽度*高度）</p></td>
+<td><p>345*120*155mm</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>充电器连接线长度</p></td>
+<td><p>1.5m</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>安全防护</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>激光雷达</p></td>
+<td><p>2个</p></td>
+<td><p>工作高度：286±2mm</p></td>
+</tr>
+<tr class="row-odd"><td><p>3D相机</p></td>
+<td><p>2个</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>避障传感器</p></td>
+<td><p>1个</p></td>
+<td><p>工作高度：1690±3mm</p></td>
+</tr>
+<tr class="row-odd"><td><p>急停按钮</p></td>
+<td><p>1个</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>控制柜规格</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>通讯方式</p></td>
+<td><p>EtherCAT</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>I/O端口</p></td>
+<td><p>2路输入输出复用</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>I/O电源</p></td>
+<td><p>24V</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>CPU</p></td>
+<td><p>Intel® Core™ i3/i5/i7-Gen12/13 Processor</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>GPU</p></td>
+<td><p>MXM接口</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>内存</p></td>
+<td><p>DDR4 32G</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>硬盘</p></td>
+<td><p>128G SSD</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>接口（单个控制柜）</p></td>
+<td><p>千兆网口*5</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>USB 3.0*4</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>COM*2，可配置为RS232/RS485/RS422</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>HDMI*1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Line out*1, Mic in*1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>环境</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>温度范围</p></td>
+<td><p>0-50°C</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>湿度范围</p></td>
+<td><p>10-90%RH</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>使用海拔</p></td>
+<td><p>≤1000m</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id5">
+<span id="id6"></span><h2><span class="section-number">9.2. </span>电气规格<a class="headerlink" href="#id5" title="链接到此标题。"></a></h2>
+<section id="id7">
+<span id="id8"></span><h3><span class="section-number">9.2.1. </span>充电器电气规格<a class="headerlink" href="#id7" title="链接到此标题。"></a></h3>
+<p>充电器电气规格如下。</p>
+<table class="docutils align-default" id="id58">
+<caption><span class="caption-number">表 9.2 </span><span class="caption-text">充电器参数</span><a class="headerlink" href="#id58" title="链接到此表格。"></a></caption>
+<colgroup>
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>项目</p></th>
+<th class="head"><p>规格</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>输入</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>额定输入电压</p></td>
+<td><p>220VAC</p></td>
+</tr>
+<tr class="row-even"><td><p>输入电压范围</p></td>
+<td><p>±10%</p></td>
+</tr>
+<tr class="row-odd"><td><p>频率范围</p></td>
+<td><p>47-63 Hz</p></td>
+</tr>
+<tr class="row-even"><td><p>输入电流</p></td>
+<td><p>≤15A</p></td>
+</tr>
+<tr class="row-odd"><td><p>效率</p></td>
+<td><p>≥91.5%</p></td>
+</tr>
+<tr class="row-even"><td><p>功率因数</p></td>
+<td><p>≥0.99</p></td>
+</tr>
+<tr class="row-odd"><td><p>输出</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>额定输出电压</p></td>
+<td><p>48VDC</p></td>
+</tr>
+<tr class="row-odd"><td><p>输出电压范围</p></td>
+<td><p>10-54.8V</p></td>
+</tr>
+<tr class="row-even"><td><p>额定输出电流</p></td>
+<td><p>20A</p></td>
+</tr>
+<tr class="row-odd"><td><p>最大输出功率</p></td>
+<td><p>1200W</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id9">
+<span id="id10"></span><h3><span class="section-number">9.2.2. </span>控制柜接口线束规格<a class="headerlink" href="#id9" title="链接到此标题。"></a></h3>
+<p>使用控制柜前面板和背面板的I/O接口接线时，应选择符合以下规范的线束。</p>
+<table class="docutils align-default" id="id59">
+<caption><span class="caption-number">表 9.3 </span><span class="caption-text">I/O接口线束规格</span><a class="headerlink" href="#id59" title="链接到此表格。"></a></caption>
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 30.0%" />
+<col style="width: 30.0%" />
+<col style="width: 20.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>接口</strong></p></th>
+<th class="head"><p><strong>端子型号</strong></p></th>
+<th class="head"><p><strong>线缆面积</strong></p></th>
+<th class="head"><p><strong>剥线长度</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>CN1_12PIN</p></td>
+<td><p>15EDGKNHB-3.5-12P-14-18Z(H), DEGSON</p></td>
+<td><p>0.2~1.5mm² (0.00031~0.00233in²) 或28~16AWG</p></td>
+<td><p>11mm (0.4in)</p></td>
+</tr>
+<tr class="row-odd"><td><p>CN2_16PIN</p></td>
+<td><p>15EDGKNHM-3.5-16P-14-00A(H), DEGSON</p></td>
+<td><p>0.2~1.5mm² (0.00031~0.00233in²) 或26~16AWG</p></td>
+<td><p>10mm (0.39in)</p></td>
+</tr>
+</tbody>
+</table>
+<p>RoboHub控制柜电源接口为4pin端子，接线时，应选择符合以下规范的线束。</p>
+<table class="docutils align-default" id="id60">
+<caption><span class="caption-number">表 9.4 </span><span class="caption-text">电源接口线束规格</span><a class="headerlink" href="#id60" title="链接到此表格。"></a></caption>
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 30.0%" />
+<col style="width: 30.0%" />
+<col style="width: 20.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>接口</strong></p></th>
+<th class="head"><p><strong>端子型号</strong></p></th>
+<th class="head"><p><strong>线缆面积</strong></p></th>
+<th class="head"><p><strong>剥线长度</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>电源连接接口</p></td>
+<td><p>2EDGKM-7.62-04P-14-1000A(H), DEGSON</p></td>
+<td><p>1.5~2.5mm² (0.0023~0.004in²) 或28~12AWG <a class="footnote-reference brackets" href="#id12" id="id11" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p></td>
+<td><p>7mm (0.28in)</p></td>
+</tr>
+</tbody>
+</table>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id12" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id11">1</a><span class="fn-bracket">]</span></span>
+<p>需保证线长≤10m（393.7in）。</p>
+</aside>
+</aside>
+</section>
+<section id="eds">
+<span id="id13"></span><h3><span class="section-number">9.2.3. </span>受EDS影响<a class="headerlink" href="#eds" title="链接到此标题。"></a></h3>
+<p>ESD（静电放电）是电势不同的两个物体间的静电传导，它可以通过直接接触传导，也可以通过感应电场传导。搬运部件或其容器时，未接地的人员可能会传导大量的静电荷。这一放电过程可能会损坏灵敏的电子装置。
+使用下列任一方案预防上述现象：</p>
+<ul class="simple">
+<li><p>使用腕带。腕带必须经常检查以确保没有损坏并且要正确使用。</p></li>
+<li><p>使用 ESD 保护地垫。地垫必须通过限流电阻接地。</p></li>
+<li><p>使用防静电桌垫。此垫应能控制静电放电且必须接地。</p></li>
+</ul>
+</section>
+<section id="id14">
+<span id="id15"></span><h3><span class="section-number">9.2.4. </span>剩余电流<a class="headerlink" href="#id14" title="链接到此标题。"></a></h3>
+<p>请根据以下控制柜剩余电流数据提供外部接地故障保护（剩余电流装置，RCD）：</p>
+<table class="docutils align-default" id="id61">
+<caption><span class="caption-number">表 9.5 </span><span class="caption-text">剩余电流</span><a class="headerlink" href="#id61" title="链接到此表格。"></a></caption>
+<colgroup>
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>机器人型号</strong></p></th>
+<th class="head"><p><strong>控制柜中的剩余电流</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Kargo</p></td>
+<td><p>＜30mA</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="id16">
+<span id="id17"></span><h2><span class="section-number">9.3. </span>机械尺寸<a class="headerlink" href="#id16" title="链接到此标题。"></a></h2>
+<p>JAKA Kargo轮式人形机器人外形尺寸如下图。</p>
+<p>Kargo机械臂外形尺寸如下图。</p>
+<figure class="align-center" id="id62">
+<a class="reference internal image-reference" href="_images/机械臂尺寸图.svg"><img alt="_images/%E6%9C%BA%E6%A2%B0%E8%87%82%E5%B0%BA%E5%AF%B8%E5%9B%BE.svg" src="_images/%E6%9C%BA%E6%A2%B0%E8%87%82%E5%B0%BA%E5%AF%B8%E5%9B%BE.svg" style="width: 13cm;" />
+</a>
+<figcaption>
+<p><span class="caption-number">图 9.1 </span><span class="caption-text">机械臂尺寸图</span><a class="headerlink" href="#id62" title="链接到此图片"></a></p>
+</figcaption>
+</figure>
+<div style="clear: both;"></div><p>Kargo机械臂工作空间如下图。</p>
+<figure class="align-center" id="id63">
+<a class="reference internal image-reference" href="_images/机械臂工作空间.svg"><img alt="_images/%E6%9C%BA%E6%A2%B0%E8%87%82%E5%B7%A5%E4%BD%9C%E7%A9%BA%E9%97%B4.svg" src="_images/%E6%9C%BA%E6%A2%B0%E8%87%82%E5%B7%A5%E4%BD%9C%E7%A9%BA%E9%97%B4.svg" style="width: 12cm;" />
+</a>
+<figcaption>
+<p><span class="caption-number">图 9.2 </span><span class="caption-text">机械臂工作空间</span><a class="headerlink" href="#id63" title="链接到此图片"></a></p>
+</figcaption>
+</figure>
+<div style="clear: both;"></div></section>
+<section id="id18">
+<span id="id19"></span><h2><span class="section-number">9.4. </span>指示灯<a class="headerlink" href="#id18" title="链接到此标题。"></a></h2>
+<p>JAKA Kargo指示灯位于身体和升降机构，其颜色定义一致，具体如下。</p>
+<figure class="align-center" id="id64">
+<a class="reference internal image-reference" href="_images/Kargo指示灯位置.svg"><img alt="_images/Kargo%E6%8C%87%E7%A4%BA%E7%81%AF%E4%BD%8D%E7%BD%AE.svg" src="_images/Kargo%E6%8C%87%E7%A4%BA%E7%81%AF%E4%BD%8D%E7%BD%AE.svg" style="width: 18cm;" />
+</a>
+<figcaption>
+<p><span class="caption-number">图 9.3 </span><span class="caption-text">Kargo指示灯位置</span><a class="headerlink" href="#id64" title="链接到此图片"></a></p>
+</figcaption>
+</figure>
+<div style="clear: both;"></div><table class="docutils align-default" id="id65">
+<caption><span class="caption-number">表 9.6 </span><span class="caption-text">指示灯定义</span><a class="headerlink" href="#id65" title="链接到此表格。"></a></caption>
+<colgroup>
+<col style="width: 40.0%" />
+<col style="width: 60.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>颜色</strong></p></th>
+<th class="head"><p><strong>状态</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>红色常亮</p></td>
+<td><p>机器人急停状态</p></td>
+</tr>
+<tr class="row-odd"><td><p>黄色常亮</p></td>
+<td><p>机器人暂停状态</p></td>
+</tr>
+<tr class="row-even"><td><p>橙色闪烁</p></td>
+<td><p>电池电量≤20%，且未充电</p></td>
+</tr>
+<tr class="row-odd"><td><p>橙色呼吸</p></td>
+<td><p>电池电量≤20%，且正在充电</p></td>
+</tr>
+<tr class="row-even"><td><p>绿色呼吸</p></td>
+<td><p>电池电量≥20%，且正在充电</p></td>
+</tr>
+<tr class="row-odd"><td><p>黄绿色常亮</p></td>
+<td><p>机器人已上电</p></td>
+</tr>
+<tr class="row-even"><td><p>绿色常亮</p></td>
+<td><p>机器人作业中</p></td>
+</tr>
+<tr class="row-odd"><td><p>黄色闪烁</p></td>
+<td><p>机器人避障中</p></td>
+</tr>
+</tbody>
+</table>
+<section id="id20">
+<span id="id21"></span><h3><span class="section-number">9.4.1. </span>电池指示灯<a class="headerlink" href="#id20" title="链接到此标题。"></a></h3>
+<p>Kargo由两块电池供电，电池位于移动底盘左侧的电池仓内，每块电池上有四个指示灯，用于指示电池电量。颜色定义如下：</p>
+<figure class="align-center" id="id66">
+<a class="reference internal image-reference" href="_images/电池指示灯位置.svg"><img alt="_images/%E7%94%B5%E6%B1%A0%E6%8C%87%E7%A4%BA%E7%81%AF%E4%BD%8D%E7%BD%AE.svg" src="_images/%E7%94%B5%E6%B1%A0%E6%8C%87%E7%A4%BA%E7%81%AF%E4%BD%8D%E7%BD%AE.svg" style="width: 5cm;" />
+</a>
+<figcaption>
+<p><span class="caption-number">图 9.4 </span><span class="caption-text">电池指示灯位置</span><a class="headerlink" href="#id66" title="链接到此图片"></a></p>
+</figcaption>
+</figure>
+<table class="docutils align-default" id="id67">
+<caption><span class="caption-number">表 9.7 </span><span class="caption-text">电池指示灯定义</span><a class="headerlink" href="#id67" title="链接到此表格。"></a></caption>
+<colgroup>
+<col style="width: 40.0%" />
+<col style="width: 60.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>颜色</strong></p></th>
+<th class="head"><p><strong>状态</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>3个绿色，1个红色</p></td>
+<td><p>电池满电</p></td>
+</tr>
+<tr class="row-odd"><td><p>2个绿色，1个红色</p></td>
+<td><p>电池50%电量</p></td>
+</tr>
+<tr class="row-even"><td><p>1个绿色，1个红色</p></td>
+<td><p>电池20%电量</p></td>
+</tr>
+<tr class="row-odd"><td><p>0个绿色，1个红色</p></td>
+<td><p>电池电量告急</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="id22">
+<span id="id23"></span><h2><span class="section-number">9.5. </span>按钮<a class="headerlink" href="#id22" title="链接到此标题。"></a></h2>
+<section id="id24">
+<span id="id25"></span><h3><span class="section-number">9.5.1. </span>整机按钮<a class="headerlink" href="#id24" title="链接到此标题。"></a></h3>
+<p>Kargo按钮位于升降机构背面，共有五个按钮，功能定义如下。</p>
+<figure class="align-center" id="id68">
+<a class="reference internal image-reference" href="_images/Kargo按钮位置.svg"><img alt="_images/Kargo%E6%8C%89%E9%92%AE%E4%BD%8D%E7%BD%AE.svg" src="_images/Kargo%E6%8C%89%E9%92%AE%E4%BD%8D%E7%BD%AE.svg" style="width: 7cm;" />
+</a>
+<figcaption>
+<p><span class="caption-number">图 9.5 </span><span class="caption-text">Kargo按钮位置</span><a class="headerlink" href="#id68" title="链接到此图片"></a></p>
+</figcaption>
+</figure>
+<div style="clear: both;"></div><table class="docutils align-default" id="id69">
+<caption><span class="caption-number">表 9.8 </span><span class="caption-text">按钮定义</span><a class="headerlink" href="#id69" title="链接到此表格。"></a></caption>
+<colgroup>
+<col style="width: 10.0%" />
+<col style="width: 30.0%" />
+<col style="width: 60.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>序号</strong></p></th>
+<th class="head"><p><strong>名称</strong></p></th>
+<th class="head"><p><strong>功能</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>开关按钮（绿色）</p></td>
+<td><p>开机：按下此按钮，Kargo系统开机，指示先是灯青色呼吸，后变为绿色常亮。</p>
+<p>关机：长按此按钮15秒，Kargo系统关机，指示灯熄灭。</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>释放抱闸按钮（蓝色）</p></td>
+<td><p>长按此按钮3秒，Kargo系统释放抱闸，Kargo可移动，指示灯蓝色常亮。</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>急停按钮</p></td>
+<td><p>按下此按钮，Kargo驱动器断电，指示灯红色慢闪。</p>
+<p>释放此按钮，指示灯红色常亮。</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>复位按钮（白色）</p></td>
+<td><p>整机处于急停状态且急停按钮已释放时，按下此按钮后，等待15秒左右，供电恢复。此时指示灯由白色变为绿色。</p>
+<p>整机处于释放抱闸状态时，按下此按钮，抱闸恢复，此时机器人不可移动，指示灯先白色闪烁一次后变为绿色。</p>
+<p>整机处于暂停状态时，按下此按钮即可恢复运行。</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>暂停/停止按钮（橙色）</p></td>
+<td><p>暂停：设备运行时，按下此按钮，整机运行暂停，指示灯橙色闪烁一次后变为绿色常亮，按下 <strong>复位</strong> 按钮即可恢复运行。</p>
+<p>停止：设备运行时，长按此按钮5秒，整机运行停止。</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>复位按钮只能恢复移动底盘的运动，不能恢复机械臂、升降柱的运动。</p>
+</div>
+</section>
+<section id="id26">
+<span id="id27"></span><h3><span class="section-number">9.5.2. </span>末端法兰按钮<a class="headerlink" href="#id26" title="链接到此标题。"></a></h3>
+<p>除以上按扭外，机械臂末端法兰处有两个按钮，分别为拖拽按钮（FREE），与记录点位按钮（POINT），如下图所示。</p>
+<figure class="align-center" id="id70">
+<a class="reference internal image-reference" href="_images/机械臂按钮位置.svg"><img alt="_images/%E6%9C%BA%E6%A2%B0%E8%87%82%E6%8C%89%E9%92%AE%E4%BD%8D%E7%BD%AE.svg" src="_images/%E6%9C%BA%E6%A2%B0%E8%87%82%E6%8C%89%E9%92%AE%E4%BD%8D%E7%BD%AE.svg" style="width: 4cm;" />
+</a>
+<figcaption>
+<p><span class="caption-number">图 9.6 </span><span class="caption-text">机械臂按钮位置</span><a class="headerlink" href="#id70" title="链接到此图片"></a></p>
+</figcaption>
+</figure>
+<p>1 拖拽按钮</p>
+<p>2 记录点位按钮</p>
+<div style="clear: both;"></div><table class="docutils align-default" id="id71">
+<caption><span class="caption-number">表 9.9 </span><span class="caption-text">按钮定义</span><a class="headerlink" href="#id71" title="链接到此表格。"></a></caption>
+<colgroup>
+<col style="width: 40.0%" />
+<col style="width: 60.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>操作</strong></p></th>
+<th class="head"><p><strong>功能</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>长按FREE按钮2s</p></td>
+<td><p>进入工具拖拽模式</p></td>
+</tr>
+<tr class="row-odd"><td><p>按下FREE按钮</p></td>
+<td><p>退出工具拖拽模式</p></td>
+</tr>
+<tr class="row-even"><td><p>长按POINT按钮2s</p></td>
+<td><p>传感器校零</p></td>
+</tr>
+<tr class="row-odd"><td><p>按下POINT按钮</p></td>
+<td><p>记录机器人点位</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p><strong>拖拽模式：</strong> 通过拖拽机器人关节控制机器人运动。</p></li>
+<li><p><strong>工具拖拽模式：</strong> 即启用力控传感器的拖拽模式。</p></li>
+<li><p><strong>记录机器人点位：</strong> 记录机器人当前TCP在笛卡尔空间的位置。按下POINT按钮后，Coboπ编程界面会出现机器人当前点位的指令。</p></li>
+<li><p><strong>传感器校零：</strong> 当传感器未受到任何力时，其输出值应为零，校零就是将此值进行调整，使其达到真正的零位。校零可保证传感器测量结果准确。</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>FREE按钮的使用，需要用户充分评估可能存在的风险，必须确保正确地设置了机器人的安装姿态、末端负载与TCP等参数，否则可能造成人身伤害或设备损毁。</p>
+</div>
+</section>
+<section id="id28">
+<span id="id29"></span><h3><span class="section-number">9.5.3. </span>电池按钮<a class="headerlink" href="#id28" title="链接到此标题。"></a></h3>
+<p>Kargo由两块电池供电，电池位于移动底盘左侧的电池仓内，每块电池上有一个指示灯，按下此按钮，电量指示灯亮起。</p>
+<p>按钮位置如下图。</p>
+<figure class="align-center" id="id72">
+<a class="reference internal image-reference" href="_images/电池按钮位置.svg"><img alt="_images/%E7%94%B5%E6%B1%A0%E6%8C%89%E9%92%AE%E4%BD%8D%E7%BD%AE.svg" src="_images/%E7%94%B5%E6%B1%A0%E6%8C%89%E9%92%AE%E4%BD%8D%E7%BD%AE.svg" style="width: 5cm;" />
+</a>
+<figcaption>
+<p><span class="caption-number">图 9.7 </span><span class="caption-text">电池按钮位置</span><a class="headerlink" href="#id72" title="链接到此图片"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="id30">
+<span id="id31"></span><h2><span class="section-number">9.6. </span>力控传感器<a class="headerlink" href="#id30" title="链接到此标题。"></a></h2>
+<p>Kargo机械臂末端法兰内嵌一个6维力控传感器，使用步骤如下：</p>
+<ul class="simple">
+<li><p><strong>校零传感器：</strong> 长按POINT按钮2s，校零传感器，此时环形指示灯蓝绿闪烁两次。</p></li>
+<li><p><strong>启用传感器：</strong> 长按FREE按钮2s，进入工具拖拽模式，此时环形指示灯黄绿交替闪烁。</p></li>
+<li><p><strong>拖拽机器人：</strong> 当只有末端法兰内嵌传感器时。通过拖拽机器人末端力传感器控制机器人运动。由于可供工具拖拽的位置较小，建议在机器人末端安装工装以便操作，拖拽位置见下图灰色区域。</p></li>
+</ul>
+<figure class="align-center" id="id73">
+<a class="reference internal image-reference" href="_images/机械臂工具拖拽位置.svg"><img alt="_images/%E6%9C%BA%E6%A2%B0%E8%87%82%E5%B7%A5%E5%85%B7%E6%8B%96%E6%8B%BD%E4%BD%8D%E7%BD%AE.svg" src="_images/%E6%9C%BA%E6%A2%B0%E8%87%82%E5%B7%A5%E5%85%B7%E6%8B%96%E6%8B%BD%E4%BD%8D%E7%BD%AE.svg" style="width: 5cm;" />
+</a>
+<figcaption>
+<p><span class="caption-number">图 9.8 </span><span class="caption-text">机械臂工具拖拽位置</span><a class="headerlink" href="#id73" title="链接到此图片"></a></p>
+</figcaption>
+</figure>
+<div style="clear: both;"></div><ul class="simple">
+<li><p><strong>退出工具拖拽：</strong> 按下FREE按钮，退出工具拖拽模式。</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<ul class="simple">
+<li><p>首次使用机器人，重新部署后，从故障中恢复后，以及传感器长时间通电静置后，应检查力传感器读数是否正常，并正确校零。</p></li>
+<li><p>保证传感器校零过程中，机器人的末端与外界环境没有接触力。</p></li>
+</ul>
+</div>
+</section>
+<section id="id32">
+<span id="id33"></span><h2><span class="section-number">9.7. </span>障碍物检测<a class="headerlink" href="#id32" title="链接到此标题。"></a></h2>
+<section id="d">
+<span id="id34"></span><h3><span class="section-number">9.7.1. </span>3D深度相机<a class="headerlink" href="#d" title="链接到此标题。"></a></h3>
+<p>Kargo机器人配有两台3D深度相机，分别位于机器人头部和身体。用于高度方向上的避障。</p>
+<figure class="align-center" id="id74">
+<a class="reference internal image-reference" href="_images/深度相机位置.svg"><img alt="_images/%E6%B7%B1%E5%BA%A6%E7%9B%B8%E6%9C%BA%E4%BD%8D%E7%BD%AE.svg" src="_images/%E6%B7%B1%E5%BA%A6%E7%9B%B8%E6%9C%BA%E4%BD%8D%E7%BD%AE.svg" style="width: 8cm;" />
+</a>
+<figcaption>
+<p><span class="caption-number">图 9.9 </span><span class="caption-text">深度相机位置</span><a class="headerlink" href="#id74" title="链接到此图片"></a></p>
+</figcaption>
+</figure>
+<div style="clear: both;"></div><p>3D相机检测范围如下：</p>
+<ul class="simple">
+<li><p>相机检测最大范围为0.2~10m，推荐障碍物检测区间为在0.25~7m，在此区间内使用相机可获得更精确可靠的数据。若物体距离相机小于20cm，相机将无法测量出该物体。</p></li>
+<li><p>相机在水平方向上的检测范围为91°，在垂直方向上的检测范围为66°。</p></li>
+<li><p>相机可以输出1280x800像素的深度图，每秒30帧。</p></li>
+<li><p>相机的快门方式为全局快门。</p></li>
+</ul>
+<div class="admonition attention">
+<p class="admonition-title">注意</p>
+<p>如果仅依靠3D相机来检测人员，机器人可能会与人员发生碰撞并导致受伤。</p>
+<ul class="simple">
+<li><p>请勿在修改激光扫描仪设置时，期望3D相机能够防止与人员发生碰撞。</p></li>
+<li><p>在对机器人进行风险评估时，请勿将3D相机作为与安全相关的风险降低措施。</p></li>
+</ul>
+</div>
+<p>3D相机存在以下局限性：</p>
+<ul class="simple">
+<li><p>只能检测机器人前方的物体，无法像激光扫描仪那样提供360°全方位视野。</p></li>
+<li><p>无法可靠地检测薄型物体，如托盘叉或货架。</p></li>
+<li><p>难以检测透明或反光障碍物。</p></li>
+<li><p>无法检测孔洞或下行的楼梯。</p></li>
+<li><p>在观察具有重复图案的结构时，无法可靠地判断深度。</p></li>
+<li><p>如果暴露在强直射光下，可能误检测出障碍物。</p></li>
+</ul>
+</section>
+<section id="id35">
+<span id="id36"></span><h3><span class="section-number">9.7.2. </span>激光雷达<a class="headerlink" href="#id35" title="链接到此标题。"></a></h3>
+<p>Kargo机器人配有两个激光雷达，位于移动底盘的右前方和左后方。用于扫描地图、导航定位、平面避障。</p>
+<figure class="align-center" id="id75">
+<a class="reference internal image-reference" href="_images/激光雷达位置.svg"><img alt="_images/%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE%E4%BD%8D%E7%BD%AE.svg" src="_images/%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE%E4%BD%8D%E7%BD%AE.svg" style="width: 9cm;" />
+</a>
+<figcaption>
+<p><span class="caption-number">图 9.10 </span><span class="caption-text">激光雷达位置</span><a class="headerlink" href="#id75" title="链接到此图片"></a></p>
+</figcaption>
+</figure>
+<div style="clear: both;"></div><p>激光雷达检测范围如下：</p>
+<ul class="simple">
+<li><p>水平方向上，每个雷达的检测角度范围为-135~135°。</p></li>
+<li><p>检测障碍物距离范围为1~3m。</p></li>
+</ul>
+<p>激光雷达存在以下局限性：</p>
+<ul class="simple">
+<li><p>仅能检测到距地面286±2mm高度平面内的物体。</p></li>
+<li><p>无法检测透明、半透明物体。</p></li>
+<li><p>检测反光障碍物时，数据可能不准确。</p></li>
+<li><p>如果暴露在强直射光下，可能误检测出障碍物。</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>机器人无法可靠检测以下障碍物：</p>
+<ul class="simple">
+<li><p>地面坑洞，如下行楼梯、装卸区或敞口深坑。</p></li>
+<li><p>玻璃或反光材质构成的墙壁或障碍物。</p></li>
+<li><p>位于激光雷达检测高度上方的悬空障碍物。</p></li>
+<li><p>位于激光雷达检测高度下方的托盘或其他障碍物。</p></li>
+</ul>
+<p>若机器人驶过边缘或撞入障碍物，失去稳定性可能导致人员重伤、机器人及设备损坏。在存在上述机器人无法可靠检测的障碍物区域，必须采取以下措施：</p>
+<ul class="simple">
+<li><p>设置物理隔离，阻止机器人进入该区域。例如，在楼梯口设置防护栏。</p></li>
+<li><p>在该区域周边布置可被安全系统检测到的障碍物。</p></li>
+<li><p>切勿依赖禁区来降低风险。禁区不具备安全等级，不得用于安全保障目的。定位误差或机械故障（如轮子卡滞或部件阻力增大）可能导致机器人驶入禁区。</p></li>
+</ul>
+</div>
+</section>
+<section id="id37">
+<span id="id38"></span><h3><span class="section-number">9.7.3. </span>安全触边<a class="headerlink" href="#id37" title="链接到此标题。"></a></h3>
+<p>安全触边位于移动底盘四周，当移动底盘与外界环境发生碰撞时，触发触边信号，实现整机急停。</p>
+<figure class="align-center" id="id76">
+<a class="reference internal image-reference" href="_images/安全触边位置.svg"><img alt="_images/%E5%AE%89%E5%85%A8%E8%A7%A6%E8%BE%B9%E4%BD%8D%E7%BD%AE.svg" src="_images/%E5%AE%89%E5%85%A8%E8%A7%A6%E8%BE%B9%E4%BD%8D%E7%BD%AE.svg" style="width: 9cm;" />
+</a>
+<figcaption>
+<p><span class="caption-number">图 9.11 </span><span class="caption-text">安全触边位置</span><a class="headerlink" href="#id76" title="链接到此图片"></a></p>
+</figcaption>
+</figure>
+<div style="clear: both;"></div></section>
+</section>
+<section id="id39">
+<span id="id40"></span><h2><span class="section-number">9.8. </span>控制面板<a class="headerlink" href="#id39" title="链接到此标题。"></a></h2>
+<p>控制面板位于升降机构背面的柜门上，用于通过软件操作机器人、查看机器人状态等。具体功能参考软件用户手册。</p>
+<figure class="align-center" id="id77">
+<a class="reference internal image-reference" href="_images/控制面板位置.svg"><img alt="_images/%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%9D%BF%E4%BD%8D%E7%BD%AE.svg" src="_images/%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%9D%BF%E4%BD%8D%E7%BD%AE.svg" style="width: 4cm;" />
+</a>
+<figcaption>
+<p><span class="caption-number">图 9.12 </span><span class="caption-text">控制面板位置</span><a class="headerlink" href="#id77" title="链接到此图片"></a></p>
+</figcaption>
+</figure>
+<div style="clear: both;"></div></section>
+<section id="id41">
+<span id="id42"></span><h2><span class="section-number">9.9. </span>无线手柄<a class="headerlink" href="#id41" title="链接到此标题。"></a></h2>
+<p>Kargo配备一无线手柄，用于控制移动底盘运动，手柄通过USB接收器连接，连接范围为10m。</p>
+<p>接受器连接至Kargo升降机构内下部的RoboHub的USB接口上。</p>
+<p>手柄按钮定义如下：</p>
+<figure class="align-center" id="id78">
+<a class="reference internal image-reference" href="_images/手柄按钮.svg"><img alt="_images/%E6%89%8B%E6%9F%84%E6%8C%89%E9%92%AE.svg" src="_images/%E6%89%8B%E6%9F%84%E6%8C%89%E9%92%AE.svg" style="width: 15cm;" />
+</a>
+<figcaption>
+<p><span class="caption-number">图 9.13 </span><span class="caption-text">手柄按钮</span><a class="headerlink" href="#id78" title="链接到此图片"></a></p>
+</figcaption>
+</figure>
+<div style="clear: both;"></div><ul class="simple">
+<li><p>1 手柄模式开关：控制Kargo底盘的运动前，需保证开关处于“D”位置。</p></li>
+<li><p>2 Logitech按钮：手柄打开后，若长时间不操作，将进入休眠，可按下此按钮重连。</p></li>
+<li><p>3 前进：控制底盘向前运动</p></li>
+<li><p>4 后退：控制底盘向后运动</p></li>
+<li><p>5 左转：控制底盘左转弯</p></li>
+<li><p>6 右转：控制底盘右转弯</p></li>
+<li><p>7 Y：加速，最大速度为1m/s</p></li>
+<li><p>8 X：减速，最小速度为0.1m/s</p></li>
+<li><p>9 A：与左转或右转按钮组合使用</p>
+<ul>
+<li><p>5+A 左平移：控制底盘向左平移</p></li>
+<li><p>6+A 右平移：控制底盘向右平移</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id43">
+<span id="id44"></span><h2><span class="section-number">9.10. </span>机械臂标定刻线<a class="headerlink" href="#id43" title="链接到此标题。"></a></h2>
+<p>机器人标定姿态即标定机器人时的姿态。机器人各关节连接处刻有标定刻线，用于机器人换关节后的标定。当所有相邻刻线对齐时，表示机器人处于标定姿态。</p>
+<p>机器人标定姿态关节角度如下。</p>
+<table class="docutils align-default" id="id79">
+<caption><span class="caption-number">表 9.10 </span><span class="caption-text">标定姿态关节角度</span><a class="headerlink" href="#id79" title="链接到此表格。"></a></caption>
+<colgroup>
+<col style="width: 14.0%" />
+<col style="width: 14.0%" />
+<col style="width: 14.0%" />
+<col style="width: 14.0%" />
+<col style="width: 14.0%" />
+<col style="width: 14.0%" />
+<col style="width: 16.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>关节一</strong></p></th>
+<th class="head"><p><strong>关节二</strong></p></th>
+<th class="head"><p><strong>关节三</strong></p></th>
+<th class="head"><p><strong>关节四</strong></p></th>
+<th class="head"><p><strong>关节五</strong></p></th>
+<th class="head"><p><strong>关节六</strong></p></th>
+<th class="head"><p><strong>关节七</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0°</p></td>
+<td><p>0°</p></td>
+<td><p>0°</p></td>
+<td><p>0°</p></td>
+<td><p>0°</p></td>
+<td><p>0°</p></td>
+<td><p>0°</p></td>
+</tr>
+</tbody>
+</table>
+<p>标定刻线位置和机器人标定姿态如下图所示。</p>
+<figure class="align-center" id="id80">
+<a class="reference internal image-reference" href="_images/机械臂标定姿态.svg"><img alt="_images/%E6%9C%BA%E6%A2%B0%E8%87%82%E6%A0%87%E5%AE%9A%E5%A7%BF%E6%80%81.svg" src="_images/%E6%9C%BA%E6%A2%B0%E8%87%82%E6%A0%87%E5%AE%9A%E5%A7%BF%E6%80%81.svg" style="width: 1.5cm;" />
+</a>
+<figcaption>
+<p><span class="caption-number">图 9.14 </span><span class="caption-text">机械臂标定姿态</span><a class="headerlink" href="#id80" title="链接到此图片"></a></p>
+</figcaption>
+</figure>
+<div style="clear: both;"></div><figure class="align-center" id="id81">
+<a class="reference internal image-reference" href="_images/机械臂标定刻线位置.svg"><img alt="_images/%E6%9C%BA%E6%A2%B0%E8%87%82%E6%A0%87%E5%AE%9A%E5%88%BB%E7%BA%BF%E4%BD%8D%E7%BD%AE.svg" src="_images/%E6%9C%BA%E6%A2%B0%E8%87%82%E6%A0%87%E5%AE%9A%E5%88%BB%E7%BA%BF%E4%BD%8D%E7%BD%AE.svg" style="width: 5cm;" />
+</a>
+<figcaption>
+<p><span class="caption-number">图 9.15 </span><span class="caption-text">机械臂标定刻线位置</span><a class="headerlink" href="#id81" title="链接到此图片"></a></p>
+</figcaption>
+</figure>
+<div style="clear: both;"></div></section>
+<section id="id45">
+<span id="id46"></span><h2><span class="section-number">9.11. </span>旋转方向<a class="headerlink" href="#id45" title="链接到此标题。"></a></h2>
+<p>Kargo机器人共有22个自由度，各自由度旋转方向如下。</p>
+<p>机械臂关节旋转方向：</p>
+<figure class="align-center" id="id82">
+<a class="reference internal image-reference" href="_images/机械臂关节旋转方向.svg"><img alt="_images/%E6%9C%BA%E6%A2%B0%E8%87%82%E5%85%B3%E8%8A%82%E6%97%8B%E8%BD%AC%E6%96%B9%E5%90%91.svg" src="_images/%E6%9C%BA%E6%A2%B0%E8%87%82%E5%85%B3%E8%8A%82%E6%97%8B%E8%BD%AC%E6%96%B9%E5%90%91.svg" style="width: 3cm;" />
+</a>
+<figcaption>
+<p><span class="caption-number">图 9.16 </span><span class="caption-text">机械臂关节旋转方向</span><a class="headerlink" href="#id82" title="链接到此图片"></a></p>
+</figcaption>
+</figure>
+<div style="clear: both;"></div><p>头、颈、腰部旋转方向：</p>
+<figure class="align-center" id="id83">
+<a class="reference internal image-reference" href="_images/头颈身旋转方向.svg"><img alt="_images/%E5%A4%B4%E9%A2%88%E8%BA%AB%E6%97%8B%E8%BD%AC%E6%96%B9%E5%90%91.svg" src="_images/%E5%A4%B4%E9%A2%88%E8%BA%AB%E6%97%8B%E8%BD%AC%E6%96%B9%E5%90%91.svg" style="width: 8cm;" />
+</a>
+<figcaption>
+<p><span class="caption-number">图 9.17 </span><span class="caption-text">头、颈、腰部旋转方向</span><a class="headerlink" href="#id83" title="链接到此图片"></a></p>
+</figcaption>
+</figure>
+<div style="clear: both;"></div></section>
+<section id="id47">
+<span id="id48"></span><h2><span class="section-number">9.12. </span>机械臂奇异点<a class="headerlink" href="#id47" title="链接到此标题。"></a></h2>
+<p>奇异点是以笛卡尔空间描述机器人位置的一些固有点位，对关节运动无影响。遇到奇异点时，首先考虑该运动是否可以使用关节运动。其次，若在机器人运动路径中间遇到奇异点，可以修改机器人运动路径以绕过奇异点。此外，也可以通过改变机器人安装位置或末端工具安装尺寸的方式，改变笛卡尔点位在机器人关节空间下的描述。</p>
+<p>当机械臂处于奇异点时，会产生以下影响：</p>
+<ul class="simple">
+<li><p>在奇异点，机器人会缺失一个或多个方向的运动能力。</p></li>
+<li><p>在奇异点附近，机器人无法找到一组合适的关节角度使TCP到达期望位置。</p></li>
+<li><p>在奇异点附近，机器人需要较大的关节速度以达到期望的TCP速度。</p></li>
+<li><p>奇异点附近的剧烈运动容易引发意外状况并缩短机器人关节寿命。</p></li>
+</ul>
+<p>Kargo的机械臂存在四种类型的奇异点，其描述如下：</p>
+<p><strong>2关节奇异点：</strong> 当2关节角度为0°时，机器人处于奇异状态。</p>
+<figure class="align-center" id="id84">
+<img alt="_images/2%E5%85%B3%E8%8A%82%E5%A5%87%E5%BC%82%E5%A7%BF%E6%80%81.png" src="_images/2%E5%85%B3%E8%8A%82%E5%A5%87%E5%BC%82%E5%A7%BF%E6%80%81.png" />
+<figcaption>
+<p><span class="caption-number">图 9.18 </span><span class="caption-text">2关节奇异姿态</span><a class="headerlink" href="#id84" title="链接到此图片"></a></p>
+</figcaption>
+</figure>
+<div style="clear: both;"></div><p>4关节奇异：当机器人4关节角度为0°时，机器人处于奇异状态。</p>
+<figure class="align-center" id="id85">
+<img alt="_images/4%E5%85%B3%E8%8A%82%E5%A5%87%E5%BC%82%E5%A7%BF%E6%80%81.png" src="_images/4%E5%85%B3%E8%8A%82%E5%A5%87%E5%BC%82%E5%A7%BF%E6%80%81.png" />
+<figcaption>
+<p><span class="caption-number">图 9.19 </span><span class="caption-text">4关节奇异姿态</span><a class="headerlink" href="#id85" title="链接到此图片"></a></p>
+</figcaption>
+</figure>
+<div style="clear: both;"></div><p>6关节奇异：当机器人6关节为0°时，机器人处于奇异状态。</p>
+<figure class="align-center" id="id86">
+<img alt="_images/6%E5%85%B3%E8%8A%82%E5%A5%87%E5%BC%82%E5%A7%BF%E6%80%81.png" src="_images/6%E5%85%B3%E8%8A%82%E5%A5%87%E5%BC%82%E5%A7%BF%E6%80%81.png" />
+<figcaption>
+<p><span class="caption-number">图 9.20 </span><span class="caption-text">6关节奇异姿态</span><a class="headerlink" href="#id86" title="链接到此图片"></a></p>
+</figcaption>
+</figure>
+<div style="clear: both;"></div><p>腕部奇异：6、7关节轴线交点位于1关节正上方时，机器人处于奇异状态。</p>
+<figure class="align-center" id="id87">
+<img alt="_images/%E8%85%95%E9%83%A8%E5%A5%87%E5%BC%82%E5%A7%BF%E6%80%81.png" src="_images/%E8%85%95%E9%83%A8%E5%A5%87%E5%BC%82%E5%A7%BF%E6%80%81.png" />
+<figcaption>
+<p><span class="caption-number">图 9.21 </span><span class="caption-text">腕部奇异姿态</span><a class="headerlink" href="#id87" title="链接到此图片"></a></p>
+</figcaption>
+</figure>
+<div style="clear: both;"></div></section>
+<section id="id49">
+<span id="id50"></span><h2><span class="section-number">9.13. </span>底盘所需空间<a class="headerlink" href="#id49" title="链接到此标题。"></a></h2>
+<p>本节说明了移动底盘运动时所需的空间。</p>
+<p>底盘直线行驶时的所需空间：</p>
+<figure class="align-center" id="id88">
+<a class="reference internal image-reference" href="_images/直线行驶所需空间.svg"><img alt="_images/%E7%9B%B4%E7%BA%BF%E8%A1%8C%E9%A9%B6%E6%89%80%E9%9C%80%E7%A9%BA%E9%97%B4.svg" src="_images/%E7%9B%B4%E7%BA%BF%E8%A1%8C%E9%A9%B6%E6%89%80%E9%9C%80%E7%A9%BA%E9%97%B4.svg" style="width: 12cm;" />
+</a>
+<figcaption>
+<p><span class="caption-number">图 9.22 </span><span class="caption-text">直线行驶所需空间</span><a class="headerlink" href="#id88" title="链接到此图片"></a></p>
+</figcaption>
+</figure>
+<div style="clear: both;"></div><p>底盘90°转弯时的所需空间：</p>
+<figure class="align-center" id="id89">
+<a class="reference internal image-reference" href="_images/90°转弯所需空间.svg"><img alt="_images/90%C2%B0%E8%BD%AC%E5%BC%AF%E6%89%80%E9%9C%80%E7%A9%BA%E9%97%B4.svg" src="_images/90%C2%B0%E8%BD%AC%E5%BC%AF%E6%89%80%E9%9C%80%E7%A9%BA%E9%97%B4.svg" style="width: 15cm;" />
+</a>
+<figcaption>
+<p><span class="caption-number">图 9.23 </span><span class="caption-text">90°转弯所需空间</span><a class="headerlink" href="#id89" title="链接到此图片"></a></p>
+</figcaption>
+</figure>
+<div style="clear: both;"></div><p>底盘驶过过道时的所需空间：</p>
+<figure class="align-center" id="id90">
+<a class="reference internal image-reference" href="_images/驶过过道所需空间.svg"><img alt="_images/%E9%A9%B6%E8%BF%87%E8%BF%87%E9%81%93%E6%89%80%E9%9C%80%E7%A9%BA%E9%97%B4.svg" src="_images/%E9%A9%B6%E8%BF%87%E8%BF%87%E9%81%93%E6%89%80%E9%9C%80%E7%A9%BA%E9%97%B4.svg" style="width: 15cm;" />
+</a>
+<figcaption>
+<p><span class="caption-number">图 9.24 </span><span class="caption-text">驶过过道所需空间</span><a class="headerlink" href="#id90" title="链接到此图片"></a></p>
+</figcaption>
+</figure>
+<div style="clear: both;"></div><p>两台底盘交错驶过时的所需空间：</p>
+<figure class="align-center" id="id91">
+<a class="reference internal image-reference" href="_images/交错驶过所需空间.svg"><img alt="_images/%E4%BA%A4%E9%94%99%E9%A9%B6%E8%BF%87%E6%89%80%E9%9C%80%E7%A9%BA%E9%97%B4.svg" src="_images/%E4%BA%A4%E9%94%99%E9%A9%B6%E8%BF%87%E6%89%80%E9%9C%80%E7%A9%BA%E9%97%B4.svg" style="width: 12cm;" />
+</a>
+<figcaption>
+<p><span class="caption-number">图 9.25 </span><span class="caption-text">交错驶过所需空间</span><a class="headerlink" href="#id91" title="链接到此图片"></a></p>
+</figcaption>
+</figure>
+<div style="clear: both;"></div><p>底盘转动时的所需空间：</p>
+<figure class="align-center" id="id92">
+<a class="reference internal image-reference" href="_images/旋转所需空间.svg"><img alt="_images/%E6%97%8B%E8%BD%AC%E6%89%80%E9%9C%80%E7%A9%BA%E9%97%B4.svg" src="_images/%E6%97%8B%E8%BD%AC%E6%89%80%E9%9C%80%E7%A9%BA%E9%97%B4.svg" style="width: 15cm;" />
+</a>
+<figcaption>
+<p><span class="caption-number">图 9.26 </span><span class="caption-text">旋转所需空间</span><a class="headerlink" href="#id92" title="链接到此图片"></a></p>
+</figcaption>
+</figure>
+<div style="clear: both;"></div></section>
+<section id="id51">
+<span id="id52"></span><h2><span class="section-number">9.14. </span>坐标系<a class="headerlink" href="#id51" title="链接到此标题。"></a></h2>
+<section id="id53">
+<span id="id54"></span><h3><span class="section-number">9.14.1. </span>机械臂坐标系<a class="headerlink" href="#id53" title="链接到此标题。"></a></h3>
+<p>机械臂有两个坐标系，分别为基座坐标系和末端法兰坐标系。</p>
+<p>基座坐标系以机械臂的底座中心为原点，正装情况下，底座垂直指向机器人本体的方向为Z+，底座中心与机器人连接线的接口的连线方向为X+，根据右手坐标系定则得到Y+，如下图所示。</p>
+<figure class="align-center" id="id93">
+<a class="reference internal image-reference" href="_images/机械臂基座坐标系.svg"><img alt="_images/%E6%9C%BA%E6%A2%B0%E8%87%82%E5%9F%BA%E5%BA%A7%E5%9D%90%E6%A0%87%E7%B3%BB.svg" src="_images/%E6%9C%BA%E6%A2%B0%E8%87%82%E5%9F%BA%E5%BA%A7%E5%9D%90%E6%A0%87%E7%B3%BB.svg" style="width: 5cm;" />
+</a>
+<figcaption>
+<p><span class="caption-number">图 9.27 </span><span class="caption-text">机械臂基座坐标系</span><a class="headerlink" href="#id93" title="链接到此图片"></a></p>
+</figcaption>
+</figure>
+<div style="clear: both;"></div><p>末端法兰坐标系为以机械臂末端法兰中心为坐标系原点，法兰端面向Z+，法兰中心与TIO连线方向为Y-，根据右手坐标系定则得到X+，如下图所示。</p>
+<figure class="align-center" id="id94">
+<a class="reference internal image-reference" href="_images/机械臂末端法兰坐标系.svg"><img alt="_images/%E6%9C%BA%E6%A2%B0%E8%87%82%E6%9C%AB%E7%AB%AF%E6%B3%95%E5%85%B0%E5%9D%90%E6%A0%87%E7%B3%BB.svg" src="_images/%E6%9C%BA%E6%A2%B0%E8%87%82%E6%9C%AB%E7%AB%AF%E6%B3%95%E5%85%B0%E5%9D%90%E6%A0%87%E7%B3%BB.svg" style="width: 3cm;" />
+</a>
+<figcaption>
+<p><span class="caption-number">图 9.28 </span><span class="caption-text">机械臂末端法兰坐标系</span><a class="headerlink" href="#id94" title="链接到此图片"></a></p>
+</figcaption>
+</figure>
+<div style="clear: both;"></div></section>
+<section id="id55">
+<span id="id56"></span><h3><span class="section-number">9.14.2. </span>移动底盘坐标系<a class="headerlink" href="#id55" title="链接到此标题。"></a></h3>
+<p>移动底盘坐标系以底盘中心为原点，正放情况下，底盘垂直指向升降机构的方向为Z+，底盘中心指向充电线接口的连线方向为X-，根据右手坐标系定则得到Y+，如下图所示。</p>
+<figure class="align-center" id="id95">
+<a class="reference internal image-reference" href="_images/移动底盘坐标系.svg"><img alt="_images/%E7%A7%BB%E5%8A%A8%E5%BA%95%E7%9B%98%E5%9D%90%E6%A0%87%E7%B3%BB.svg" src="_images/%E7%A7%BB%E5%8A%A8%E5%BA%95%E7%9B%98%E5%9D%90%E6%A0%87%E7%B3%BB.svg" style="width: 5cm;" />
+</a>
+<figcaption>
+<p><span class="caption-number">图 9.29 </span><span class="caption-text">移动底盘坐标系</span><a class="headerlink" href="#id95" title="链接到此图片"></a></p>
+</figcaption>
+</figure>
+<div style="clear: both;"></div></section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="06-1%20%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8.html" class="btn btn-neutral float-left" title="8. 快速入门" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="08%20%E5%AE%89%E8%A3%85%E4%B8%8E%E8%B0%83%E8%AF%95.html" class="btn btn-neutral float-right" title="安装与调试" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2026, JAKA。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
