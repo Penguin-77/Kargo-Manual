@@ -7,9 +7,21 @@ build:
   apt_packages:
     - fonts-noto-cjk
     - fonts-noto-cjk-extra
-    - texlive-lang-chinese  # 增加中文语言包支持
-    - texlive-xetex         # 确保 xetex 已安装
+    - texlive-lang-chinese
+    - texlive-xetex
+    - texlive-latex-extra
     - latexmk
+    - librsvg2-bin
+  
+  # 关键修复：jobs 必须在 build 缩进之下
+  jobs:
+    post_build:
+      - sphinx-build -b html source $READTHEDOCS_OUTPUT/html
+      - sphinx-build -b latex source _build/latex
+      # 注意：确保 KargoManual.tex 的大小写与你项目生成的一致
+      - cd _build/latex && latexmk -pdf -xelatex -interaction=nonstopmode -jobname=kargo-manual KargoManual.tex
+      - mkdir -p $READTHEDOCS_OUTPUT/pdf
+      - cp _build/latex/kargo-manual.pdf $READTHEDOCS_OUTPUT/pdf/
 
 python:
   install:
@@ -17,13 +29,3 @@ python:
 
 sphinx:
   configuration: source/conf.py
-
-# 使用 RTD 默认的构建流程通常更稳定，除非你有极特殊的定制需求
-# 如果一定要用自定义 commands，请参考下方优化后的写法
-jobs:
-  post_build:
-    - sphinx-build -b latex source _build/latex
-    # 移除 -f (force) 参数有时能更清晰地看到报错原因
-    - cd _build/latex && latexmk -pdf -xelatex -interaction=nonstopmode -jobname=kargo-manual KargoManual.tex
-    - mkdir -p $READTHEDOCS_OUTPUT/pdf
-    - cp _build/latex/kargo-manual.pdf $READTHEDOCS_OUTPUT/pdf/
