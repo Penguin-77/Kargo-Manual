@@ -12,16 +12,6 @@ build:
     - texlive-latex-extra
     - latexmk
     - librsvg2-bin
-  
-  # 关键修复：jobs 必须在 build 缩进之下
-  jobs:
-    post_build:
-      - sphinx-build -b html source $READTHEDOCS_OUTPUT/html
-      - sphinx-build -b latex source _build/latex
-      # 注意：确保 KargoManual.tex 的大小写与你项目生成的一致
-      - cd _build/latex && latexmk -pdf -xelatex -interaction=nonstopmode -jobname=kargo-manual KargoManual.tex
-      - mkdir -p $READTHEDOCS_OUTPUT/pdf
-      - cp _build/latex/kargo-manual.pdf $READTHEDOCS_OUTPUT/pdf/
 
 python:
   install:
